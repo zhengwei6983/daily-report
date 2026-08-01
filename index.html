@@ -1,652 +1,463 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>科技政策日报 | 2026年7月31日</title>
-<style>
-  :root {
-    --primary: #1a56db;
-    --primary-light: #e8f0fe;
-    --accent: #e74c3c;
-    --accent-light: #fde8e7;
-    --green: #0d9488;
-    --green-light: #e6f7f5;
-    --orange: #ea580c;
-    --orange-light: #fff3e6;
-    --purple: #7c3aed;
-    --purple-light: #f0e8ff;
-    --teal: #0891b2;
-    --teal-light: #e0f7fa;
-    --bg: #f8fafc;
-    --card: #ffffff;
-    --text: #1e293b;
-    --text-secondary: #64748b;
-    --border: #e2e8f0;
-    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    padding: 20px;
-  }
-  .container { max-width: 960px; margin: 0 auto; }
-
-  /* Header */
-  .header {
-    background: linear-gradient(135deg, #1a56db 0%, #3b82f6 50%, #0ea5e9 100%);
-    color: #fff;
-    border-radius: 16px;
-    padding: 36px 40px 28px;
-    margin-bottom: 24px;
-    position: relative;
-    overflow: hidden;
-  }
-  .header::after {
-    content: '';
-    position: absolute;
-    top: -50%; right: -10%;
-    width: 400px; height: 400px;
-    background: rgba(255,255,255,0.08);
-    border-radius: 50%;
-  }
-  .header h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    position: relative; z-index: 1;
-  }
-  .header .subtitle {
-    font-size: 16px;
-    opacity: 0.95;
-    position: relative; z-index: 1;
-  }
-  .header .date-badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.2);
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-top: 12px;
-    position: relative; z-index: 1;
-    backdrop-filter: blur(8px);
-  }
-
-  /* Urgent bar */
-  .urgent-bar {
-    background: linear-gradient(90deg, #dc2626 0%, #ea580c 100%);
-    color: #fff;
-    border-radius: 12px;
-    padding: 18px 24px;
-    margin-bottom: 24px;
-    box-shadow: 0 4px 12px rgba(220,38,38,0.25);
-  }
-  .urgent-bar h2 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .urgent-bar ul { list-style: none; }
-  .urgent-bar li {
-    padding: 4px 0;
-    font-size: 14px;
-    border-bottom: 1px dashed rgba(255,255,255,0.25);
-  }
-  .urgent-bar li:last-child { border-bottom: none; }
-  .urgent-bar .tag {
-    display: inline-block;
-    background: rgba(255,255,255,0.25);
-    padding: 1px 8px;
-    border-radius: 10px;
-    font-size: 12px;
-    margin-right: 6px;
-  }
-
-  /* Section */
-  .section {
-    background: var(--card);
-    border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow);
-    border-left: 4px solid var(--primary);
-  }
-  .section.province { border-left-color: var(--primary); }
-  .section.city { border-left-color: var(--green); }
-  .section.city-xg { border-left-color: var(--purple); }
-  .section.city-tj { border-left-color: var(--teal); }
-  .section.national { border-left-color: var(--orange); }
-  .section.tips { border-left-color: var(--accent); background: var(--accent-light); }
-  .section h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 14px;
-    color: var(--primary);
-    display: flex; align-items: center; gap: 8px;
-  }
-  .section.city h3 { color: var(--green); }
-  .section.city-xg h3 { color: var(--purple); }
-  .section.city-tj h3 { color: var(--teal); }
-  .section.national h3 { color: var(--orange); }
-  .section.tips h3 { color: var(--accent); }
-
-  .policy-list { list-style: none; }
-  .policy-list li {
-    padding: 10px 0 10px 16px;
-    border-left: 2px solid var(--border);
-    margin-bottom: 10px;
-    position: relative;
-  }
-  .policy-list li::before {
-    content: '';
-    position: absolute;
-    left: -6px; top: 18px;
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    background: var(--primary);
-    border: 2px solid #fff;
-    box-shadow: 0 0 0 2px var(--primary);
-  }
-  .section.city .policy-list li::before { background: var(--green); box-shadow: 0 0 0 2px var(--green); }
-  .section.city-xg .policy-list li::before { background: var(--purple); box-shadow: 0 0 0 2px var(--purple); }
-  .section.city-tj .policy-list li::before { background: var(--teal); box-shadow: 0 0 0 2px var(--teal); }
-  .section.national .policy-list li::before { background: var(--orange); box-shadow: 0 0 0 2px var(--orange); }
-
-  .policy-list .title {
-    font-weight: 600;
-    color: var(--text);
-    font-size: 15px;
-  }
-  .policy-list .meta {
-    font-size: 13px;
-    color: var(--text-secondary);
-    margin-top: 2px;
-  }
-  .policy-list .desc {
-    font-size: 14px;
-    color: #475569;
-    margin-top: 4px;
-  }
-  .policy-list .new-badge {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 11px;
-    padding: 1px 6px;
-    border-radius: 8px;
-    margin-left: 4px;
-    vertical-align: middle;
-  }
-  .policy-list a {
-    color: var(--primary);
-    text-decoration: none;
-    font-size: 13px;
-  }
-  .policy-list a:hover { text-decoration: underline; }
-
-  /* Share */
-  .share-bar {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px 20px;
-    margin: 20px 0;
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .share-btn {
-    background: var(--primary);
-    color: #fff;
-    border: none;
-    padding: 8px 18px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  .share-btn.secondary {
-    background: #fff;
-    color: var(--primary);
-    border: 1px solid var(--primary);
-  }
-  .share-btn:hover { opacity: 0.9; }
-
-  /* Footer */
-  .footer {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 13px;
-    padding: 24px 0;
-    border-top: 1px solid var(--border);
-    margin-top: 24px;
-  }
-  .footer a { color: var(--primary); text-decoration: none; }
-
-  /* Responsive */
-  @media (max-width: 640px) {
-    body { padding: 10px; }
-    .header { padding: 24px 20px 20px; }
-    .header h1 { font-size: 24px; }
-    .section { padding: 18px 18px; }
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一站式科技政策日报 - 2026年8月1日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .header .date {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        .content {
+            padding: 40px;
+        }
+        .summary-box {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(245, 87, 108, 0.3);
+        }
+        .summary-box h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .summary-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .summary-box li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+        .summary-box li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            font-size: 0.8em;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 700;
+        }
+        .policy-card {
+            background: #f8f9ff;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        .policy-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+        .policy-card h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        .policy-card .meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .policy-card .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .policy-card .content {
+            color: #555;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #856404;
+            font-weight: 600;
+        }
+        .deadline {
+            background: #f8d7da;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #721c24;
+            font-weight: 600;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 2px solid #e9ecef;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .share-section {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .share-section p {
+            color: #0066cc;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .content { padding: 20px; }
+            .policy-card { padding: 15px; }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
+    <div class="container">
+        <div class="header">
+            <h1>🔬 一站式科技政策日报</h1>
+            <div class="date">2026年8月1日 星期六</div>
+        </div>
+        
+        <div class="content">
+            <div class="summary-box">
+                <h2>📋 今日重点政策摘要</h2>
+                <ul>
+                    <li><span class="highlight">重磅</span> 四部门联合发布《可再生能源消费最低比重目标和可再生能源电力消纳责任权重制度实施办法》,8月1日起正式实施,首次将非电消费纳入考核</li>
+                    <li><span class="highlight">AI布局</span> 多部门围绕人工智能密集部署:发改委加快AI立法,工信部推进普惠算力,知识产权局完善AI专利审查标准</li>
+                    <li><span class="highlight">高企认定</span> 工信部等八部门启动科技型企业创新政策扶持"一件事"专项行动,8月底前完成高企认定管理系统升级</li>
+                    <li><span class="deadline">紧急</span> 河北省燕赵钢铁实验室联合基金依托单位审核8月5日截止</li>
+                    <li><span class="deadline">紧急</span> 河北省产学研深度融合项目8月15日截止申报</li>
+                    <li><span class="deadline">紧急</span> 工信部卓越级智能工厂8月15日线上申报截止</li>
+                    <li>河北省特色产业集群"领跑者"培育系统开放中(7月25日-9月15日)</li>
+                    <li>天津市创业投资奖励申报进行中,最高500万元,8月28日截止</li>
+                    <li>雄安新区四只产业基金公开征集管理机构,总规模32亿元</li>
+                </ul>
+            </div>
 
-  <!-- Header -->
-  <div class="header">
-    <h1>🔬 一站式科技政策日报</h1>
-    <div class="subtitle">覆盖天津 · 河北 · 雄安 · 邯郸 · 邢台 | 科技 · 工信 · 发改</div>
-    <div class="date-badge">📅 2026年7月31日 星期四</div>
-  </div>
+            <div class="section">
+                <h2 class="section-title">🏛️ 国家级重点政策</h2>
+                
+                <div class="policy-card">
+                    <h3>四部门联合发布《可再生能源消费最低比重目标和可再生能源电力消纳责任权重制度实施办法》</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-06-22</span>
+                        <span>⏰ 实施:2026-08-01</span>
+                        <span>🏢 发改委/工信部/住建部/交通部</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>核心内容:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>建立可再生能源消费最低比重目标制度,分为电力消费和非电消费两类</li>
+                            <li><span class="highlight">首次将非电消费纳入考核</span>,包括可再生能源供热(制冷)、制氢氨醇等</li>
+                            <li>重点用能行业包括:电解铝、钢铁、水泥、多晶硅、国家枢纽节点新建数据中心等</li>
+                            <li>对未完成目标的企业,逾期将被约谈、通报并纳入信用记录</li>
+                            <li>各省不得限制新能源参与跨省区电力市场交易或跨省区绿证交易</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>影响:</strong>对高耗能企业和数据中心影响重大,推动绿色能源消费,促进碳达峰碳中和目标实现。</p>
+                    </div>
+                </div>
 
-  <!-- 紧急截止 -->
-  <div class="urgent-bar">
-    <h2>⏰ 紧急截止提醒</h2>
-    <ul>
-      <li><span class="tag">今日 7/31</span>河北省99家零碳工厂建设名单公示截止</li>
-      <li><span class="tag">今日 7/31</span>雄安新区颠覆性技术专项申报截止</li>
-      <li><span class="tag">今日 7/31</span>天津建筑保温材料规范企业申报材料报送截止</li>
-      <li><span class="tag">今日 7/31</span>河北省工信厅无线电管理信息系统运维项目投标截止</li>
-      <li><span class="tag">8/5</span>河北省政府投资基金重点投资领域清单征求意见截止</li>
-      <li><span class="tag">8/7</span>河北省知识产权质量提升补助项目初审截止</li>
-      <li><span class="tag">8/7</span>邢台市科技计划纸质任务书提交截止</li>
-      <li><span class="tag">8/15</span>河北省卓越级智能工厂线上申报截止</li>
-      <li><span class="tag">8/28</span>天津市科技型企业贷款贴息申报截止 + 创投奖励申报截止</li>
-      <li><span class="tag">8/31</span>邯郸市研发平台评估+科普基地申报+研发平台新认定截止</li>
-      <li><span class="tag">9/15</span>河北省"领跑者"市级培育库录入截止</li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>工信部等八部门启动科技型企业创新政策扶持"一件事"专项行动</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-28</span>
+                        <span>🏢 工信部/科技部/财政部等八部门</span>
+                        <span>📄 工信厅联高新函〔2026〕346号</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>六大重点任务:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>2026年7月底前全面实现跨部门数据共享(财政、应急、海关、税务、市场监管、知识产权等)</li>
+                            <li><span class="deadline">8月底前</span>完成高新技术企业认定管理工作网升级优化</li>
+                            <li>新增数据互联对接、申报信息智能预填、数据交叉核验等功能</li>
+                            <li>凡是可通过政务数据共享获取的信息,一律不再要求企业重复填报</li>
+                            <li>将多部门数据交叉核验嵌入专家评审全过程</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>意义:</strong>大幅提升高企认定办理效能,切实为科技企业减负赋能。</p>
+                    </div>
+                </div>
 
-  <!-- 分享栏 -->
-  <div class="share-bar">
-    <span style="font-size:14px;color:var(--text-secondary);">📲 一键分享：</span>
-    <button class="share-btn" onclick="shareWechat()">微信分享</button>
-    <button class="share-btn secondary" onclick="copyLink()">复制链接</button>
-    <span id="copy-tip" style="font-size:13px;color:var(--green);display:none;">✅ 已复制</span>
-  </div>
+                <div class="policy-card">
+                    <h3>多部门围绕人工智能密集部署</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-08-01</span>
+                        <span>🏢 发改委/工信部/知识产权局/能源局等</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>各部门部署要点:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>发改委:</strong>加快AI立法进程,推动世界人工智能合作组织建设</li>
+                            <li><strong>工信部:</strong>深入实施普惠算力赋能中小企业发展专项行动,推动智算集群建设</li>
+                            <li><strong>知识产权局:</strong>完善"人工智能"、具身智能、脑机接口等新兴产业专利审查标准</li>
+                            <li><strong>能源局:</strong>推广"昆仑"、"驭电"、"光明电力"等AI大模型应用</li>
+                            <li><strong>海关总署:</strong>将43个重点口岸纳入"十五五"国家"智慧口岸建设工程"</li>
+                            <li><strong>交通部:</strong>推进都市圈"人工智能+交通运输"典型场景应用</li>
+                            <li><strong>邮政局:</strong>大力拓展无人机运邮,普及智能终端和智能体</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>信号:</strong>人工智能已成为"十五五"高质量发展核心抓手,从前沿科技概念转变为实体经济转型刚需产业。</p>
+                    </div>
+                </div>
 
-  <!-- 今日重点 -->
-  <div class="section">
-    <h3>🔥 今日重点发布（7月31日）</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">🏦 九部门联合印发《关于加强科技金融领域数据开发利用的通知》 <span class="new-badge">昨日</span></div>
-        <div class="meta">中国人民银行等九部门 · 7月30日</div>
-        <div class="desc">发布《全国科技金融领域数据开发利用目录1.0》，涵盖企业名单与科创属性、知识产权、研发投入等<b>8大类26个数据指标</b>。搭建行业研究信息交流平台，推广"一链一策"精准匹配金融资源。<b>对科技型企业融资对接、智能风控有直接利好</b>。</div>
-      </li>
-      <li>
-        <div class="title">⚡ 工信部发布废旧动力电池"梯次利用"整治公告 <span class="new-badge">昨日</span></div>
-        <div class="meta">工信部 · 7月30日</div>
-        <div class="desc">废止梯次利用相关条款，<b>严禁将废旧动力电池用于电动自行车</b>及其他禁止领域。已公告的"梯次利用"企业移出名单。涉及新能源、电池产业链的企业需关注合规风险。</div>
-      </li>
-      <li>
-        <div class="title">🏭 河北省零碳工厂公示今日截止 + 国家级零碳工厂建设启动</div>
-        <div class="meta">河北省工信厅 / 工信部</div>
-        <div class="desc">99家省级零碳工厂拟认定名单公示今日截止。同步，工信部启动国家级零碳工厂建设工作，梯度培育体系完善，绿色制造机会加大。</div>
-      </li>
-      <li>
-        <div class="title">📊 天津市2026年营商环境提质升级行动计划发布</div>
-        <div class="meta">天津市人民政府办公厅 · 7月30日</div>
-        <div class="desc">重点包括：提升企业融资便利度、科技创新支撑（"种子+天使+创投+产业+并购"基金群）、"企业创新积分制"、优化土地要素配置。科技型企业可重点关注融资及创新积分政策。</div>
-      </li>
-      <li>
-        <div class="title">🤖 工信部"小快轻准"数字化产品和服务培育指引(2026版)正式发布</div>
-        <div class="meta">工信部 · 7月27日</div>
-        <div class="desc">围绕小型化、快速化、轻量化、精准化、数智化5个维度提出<b>15个培育方向</b>。鼓励产品深度融合AI技术，杜绝隐性收费与捆绑销售。依托全国中小企业数字化转型平台建设优质产品资源池。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>工信部等六部门开展2026年度智能工厂梯度培育行动</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-27</span>
+                        <span>⏰ 卓越级申报截止:2026-08-15</span>
+                        <span>🏢 工信部/发改委/财政部等六部门</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>培育层级:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>基础级:聚焦数字化转型,规上工业企业自愿开展自评自建</li>
+                            <li>先进级:聚焦数字化网络化能力提升,省级部门培育认定</li>
+                            <li>卓越级:重点实施智能化升级,打造全国领先标杆</li>
+                            <li>领航级:最高层级,引领行业发展方向</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><span class="deadline">卓越级智能工厂线上申报截止:8月15日</span>,通过智能制造数据资源公共服务平台申报。</p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- 国家级 -->
-  <div class="section national">
-    <h3>🏛️ 国家级重点政策</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">九部门：科技金融领域数据开发利用通知</div>
-        <div class="meta">央行+发改委+科技部+工信部+海关总署+市场监管总局+金融监管总局+知识产权局+数据局 · 7月30日</div>
-        <div class="desc">发布《全国科技金融领域数据开发利用目录1.0》（8大类26个指标），鼓励开展科技金融可信数据空间试点，支持市场化征信机构建设科技型企业数据库。</div>
-        <a href="https://jrj.sh.gov.cn/ZXYW178/20260730/8326119e3a5346019c6642f80236c86c.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">2026年度智能工厂梯度培育行动（六部门联合）</div>
-        <div class="meta">工信部+发改委+财政部+国资委+市场监管总局+数据局 · 7月27日</div>
-        <div class="desc">基础级、先进级、卓越级、领航级四级培育。<b>卓越级线上申报截止8月15日</b>（通过智能制造数据资源公共服务平台）。</div>
-        <a href="https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/tzgg83/2026072714343185323/index.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">工信部：国家级零碳工厂建设工作启动</div>
-        <div class="meta">工信部 · 7月22日</div>
-        <div class="desc">配合省级零碳工厂培育，国家级零碳工厂建设正式启动，绿色制造梯度培育体系进一步完善。</div>
-      </li>
-      <li>
-        <div class="title">工信部："小快轻准"数字化产品和服务培育指引(2026版)</div>
-        <div class="meta">工信部办公厅 · 7月27日</div>
-        <div class="desc">5维度15方向，面向中小企业数字化转型需求，鼓励AI融合、杜绝隐性收费，建设优质资源池。</div>
-        <a href="https://new.qq.com/rain/a/20260728A04B5Y00" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">新一代人工智能国家科技重大专项2026年度第一批项目申报</div>
-        <div class="meta">科技部 · 持续推进</div>
-        <div class="desc">聚焦AI+信创、算力、具身智能等方向，河北省由科技厅组织推荐。</div>
-      </li>
-    </ul>
-  </div>
+            <div class="section">
+                <h2 class="section-title">🏢 河北省政策动态</h2>
+                
+                <div class="policy-card">
+                    <h3>河北省自然科学基金燕赵钢铁实验室联合基金项目申报</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-08</span>
+                        <span>⏰ 依托单位审核截止:2026-08-05</span>
+                        <span>🏢 河北省科技厅</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>项目类别:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>重点项目:无纸化申报,依托单位审核截止<span class="deadline">8月5日17:00</span></li>
+                            <li>重大项目:正式申报截止<span class="deadline">8月14日</span></li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>申报方式:</strong>通过"河北省科学技术厅网站"—"科技管理"—"科技计划"—"河北省科技计划项目综合服务平台"在线操作。</p>
+                        <p style="margin-top: 10px;"><strong>咨询电话:</strong>0311-85810058、85817132、66505379、85821343</p>
+                    </div>
+                </div>
 
-  <!-- 河北省 -->
-  <div class="section province">
-    <h3>🏢 河北省动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">省工信厅：99家零碳工厂建设名单公示今日截止</div>
-        <div class="meta">河北省工信厅 · 公示至7月31日</div>
-        <div class="desc">2026年度省级零碳工厂拟认定名单，零碳工厂梯度培育加速。关注客户是否在列。</div>
-      </li>
-      <li>
-        <div class="title">省工信厅：2026年度智能工厂梯度培育行动（河北落实）</div>
-        <div class="meta">7月27日 · 卓越级8月15日截止</div>
-        <div class="desc">基础级/先进级通过省工业企业服务平台申报；卓越级通过国家平台。六部门联合推动。</div>
-        <a href="https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/tzgg83/2026072714343185323/index.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">省工信厅：特色产业集群"领跑者"培育系统已开放</div>
-        <div class="meta">7月25日开放 · 市级库至9/15 · 领跑者8/10-9/21</div>
-        <div class="desc">市级培育库录入至9月15日，领跑者培育申请8月10日-9月21日，龙头培育9月15日-9月30日。</div>
-      </li>
-      <li>
-        <div class="title">省工信厅：《特色产业集群"共享智造"工作指南》2026修订版</div>
-        <div class="meta">7月16日</div>
-        <div class="desc">五大共享路径：原料集采共享、产能协同共享、创新资源共用、数字平台赋能、物流服务共享。</div>
-      </li>
-      <li>
-        <div class="title">省科技厅：科技骨干企业68家名单公布</div>
-        <div class="meta">6月30日</div>
-        <div class="desc">后续配套支持政策值得关注。</div>
-      </li>
-      <li>
-        <div class="title">省科技厅："药研保融通"科技金融服务方案</div>
-        <div class="meta">7月20日 · 太平财险+中国银行</div>
-        <div class="desc">"保险保障+银行融资"组合服务，覆盖生物医药全链条。保费最高补贴50%，研发贷最高1000万。</div>
-        <a href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026072209341222799/index.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">省发改委：政府投资基金重点投资领域清单征求意见</div>
-        <div class="meta">截止8月5日</div>
-        <div class="desc">四大板块：传统优势产业优化、新兴产业壮大、未来产业+海洋产业、生产性服务业。</div>
-      </li>
-      <li>
-        <div class="title">省科技厅：科技成果评价新标准已实施（7月30日起）</div>
-        <div class="meta">国内首个</div>
-        <div class="desc">《科技成果权威性竞争性评价规范》省地方标准正式实施，重构评价体系。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>2026年河北省产学研深度融合高质量发展研究项目申报</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-10</span>
+                        <span>⏰ 申报截止:2026-08-15</span>
+                        <span>🏢 河北省科学院/河北省产学研合作研究会</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>申报范围:</strong>面向全省高等院校、科研院所、企业及相关单位</p>
+                        <p style="margin-top: 10px;"><strong>研究方向:</strong>聚焦河北省产学研深度融合高质量发展重点领域</p>
+                        <p style="margin-top: 10px;"><strong>咨询电话:</strong>0311-85296107、13832380063、0311-83017907</p>
+                    </div>
+                </div>
 
-  <!-- 天津市 -->
-  <div class="section city-tj">
-    <h3>🌊 天津市动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">市政府办公厅：2026年营商环境提质升级行动计划 <span class="new-badge">昨日</span></div>
-        <div class="meta">7月30日发布</div>
-        <div class="desc">六大行动：要素供给精准赋能、人才引育、土地要素配置、科技创新支撑（"企业创新积分制"）、政务服务升级、信用体系建设。</div>
-        <a href="https://www.tj.gov.cn/zwgk/szfwj/tjsrmzfbgt/202607/t20260730_7344305.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">市政务服务办："高效办成一件事"常态化实施 <span class="new-badge">今日</span></div>
-        <div class="meta">7月31日 · 天津日报</div>
-        <div class="desc">六大核心内容：清单管理、流程集成优化、线上线下融合、数据共享赋能、领域拓展延伸、评价闭环管理。"津产发"产业平台上线。</div>
-      </li>
-      <li>
-        <div class="title">市科技局：2026年度创业投资奖励申报受理</div>
-        <div class="meta">7月23日 · 截止8月28日</div>
-        <div class="desc">按投资额1%奖励，<b>最高500万元</b>。通过科服网(www.tten.cn)线上申报。</div>
-        <a href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202607/t20260723_7340374.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">市科技局：2026年度高新技术企业认定工作安排</div>
-        <div class="meta">6月23日 · 第二批截止8月28日</div>
-        <div class="desc">告知承诺制/非告知承诺制两种方式。第二批材料截止8月28日，第三批11月27日。</div>
-      </li>
-      <li>
-        <div class="title">市工信局：《天津市落实全国统一电力市场体系实施方案》</div>
-        <div class="meta">7月23日</div>
-        <div class="desc">2026年底前电力现货市场模拟试运行；2027年起35千伏以上用户全部直接参与市场。</div>
-      </li>
-      <li>
-        <div class="title">市发改委：第四监管周期输配电价（8月1日起执行）</div>
-        <div class="meta">7月28日</div>
-        <div class="desc">工商业用电归并为两部制/单一制两类；居民农业不调整。全年降低工商业用电成本约15亿元。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>河北省特色产业集群"领跑者"培育企业工作</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-17</span>
+                        <span>⏰ 市级库录入截止:2026-09-15</span>
+                        <span>🏢 河北省工信厅</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>培育对象:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>领跑者培育企业:已纳入市级培育库的企业 + 2023年公布的267家集群领跑者企业</li>
+                            <li>龙头培育企业:2024-2025年领跑者企业 + 申请参加培育的企业</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>时间节点:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>市级培育库录入:7月25日-9月15日(每个集群最多50家)</li>
+                            <li>领跑者培育申请:8月10日-9月21日</li>
+                            <li>龙头培育企业入库:9月15日-9月30日(每个集群最多3家)</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>申报平台:</strong>河北工业企业服务平台</p>
+                    </div>
+                </div>
 
-  <!-- 雄安新区 -->
-  <div class="section city-xg">
-    <h3>🏙️ 雄安新区动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">颠覆性技术专项申报今日截止</div>
-        <div class="meta">7月31日截止</div>
-        <div class="desc">雄安颠覆性技术创新项目今日为申报最后期限，有相关客户的抓紧确认。</div>
-      </li>
-      <li>
-        <div class="title">人工智能产业园：以园筑巢 聚智成势</div>
-        <div class="meta">7月19日</div>
-        <div class="desc">96家AI企业集聚，双百亿基金+300万单项资助。AI被定调为"战略性支撑产业"。</div>
-      </li>
-      <li>
-        <div class="title">第七届"智绘未来"创新创业大赛晋级复赛名单公布</div>
-        <div class="meta">7月24日</div>
-        <div class="desc">第十五届中国创新创业大赛雄安赛区决赛名单出炉。</div>
-      </li>
-      <li>
-        <div class="title">自贸试验区改革示范项目"揭榜挂帅"</div>
-        <div class="meta">计划任务书7月30日已截止</div>
-        <div class="desc">6项榜单任务：标准制度型开放、金融"大创新"、国际港"大通关"、数据出境负面清单、离境退税"即买即退"、数字人民币场景。奖励最高20万元。</div>
-      </li>
-      <li>
-        <div class="title">科技金融工作推进会 + 科技金融行动方案</div>
-        <div class="meta">7月22日</div>
-        <div class="desc">《雄安新区推动科技金融高质量发展加快打造新时代科技创新高地的行动方案》正式发布，构建全生命周期金融服务体系。</div>
-        <a href="https://www.xiongan.gov.cn/20260722/0989812a142a4078aef537ab86fbb9a9/c.html" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">对"低慢小"航空器实施临时管控（乒超联赛7/28-8/1）</div>
-        <div class="meta">管委会通告</div>
-        <div class="desc">涉及无人机等飞行器管控，相关企业注意合规。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>2026年度河北省科技型中小企业评价工作</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-06-18</span>
+                        <span>⏰ 企业申报截止:2026-08-25</span>
+                        <span>🏢 河北省科技厅/河北省工信厅</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>申报要求:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>登录优质中小企业梯度培育平台注册并填报</li>
+                            <li>不通过第三方中介机构申报,弄虚作假者三年内不得参与评价</li>
+                            <li>有效期内国家科技型中小企业可申报专精特新中小企业</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>评价流程:</strong>全面审核 → 实地核查(部分企业) → 集中抽查(不低于5%比例)</p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- 邯郸市 -->
-  <div class="section city">
-    <h3>🏛️ 邯郸市动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">市科技局：2026年度市级研发平台绩效评估（60家）</div>
-        <div class="meta">7月21日 · 截止8月31日</div>
-        <div class="desc">到期需评估的市级技术创新中心/重点实验室/产业技术研究院，归口部门汇总上报。</div>
-        <a href="http://hdskjj.hd.gov.cn/web/info.aspx?id=31204" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">市科技局：市级科普基地评价工作</div>
-        <div class="meta">7月21日 · 截止8月31日</div>
-        <div class="desc">2024年认定的市级科普基地参加评价，未按要求参评将取消资格。</div>
-        <a href="http://hdskjj.hd.gov.cn/web/info.aspx?id=31211" target="_blank">查看原文 →</a>
-      </li>
-      <li>
-        <div class="title">市科技局：市级研发平台新申报</div>
-        <div class="meta">7月21日 · 截止8月31日</div>
-        <div class="desc">各县市区组织企业申报市级技术创新中心、重点实验室、产业技术研究院。</div>
-      </li>
-      <li>
-        <div class="title">邯郸科创产业园专家论坛进县区——磁县、大名专场</div>
-        <div class="meta">7月14日</div>
-        <div class="desc">专家下沉县域，推动产业创新发展。</div>
-      </li>
-      <li>
-        <div class="title">市科技局：2026年规范性文件清理结果</div>
-        <div class="meta">7月9日</div>
-        <div class="desc">保留11件（含孵化器、创新联合体、引智工作站等新办法），废止2件、失效3件。</div>
-      </li>
-    </ul>
-  </div>
+            <div class="section">
+                <h2 class="section-title">🌉 雄安新区政策动态</h2>
+                
+                <div class="policy-card">
+                    <h3>雄安集团四只产业基金公开征集管理机构</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-28</span>
+                        <span>💰 总规模:32亿元</span>
+                        <span>🏢 中国雄安集团基金管理有限公司</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>四只子基金:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>空天信息和卫星互联网产业投资基金:10亿元</li>
+                            <li>人工智能和数字经济产业投资基金:10亿元</li>
+                            <li>颠覆性科技创新基金:2亿元</li>
+                            <li>新质生产力科技创新创业投资基金:10亿元</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>投资方向:</strong>重点聚焦空天信息、人工智能、新材料等新区重点发展产业,投资天使期、早中期科技企业金额不低于60%。</p>
+                        <p style="margin-top: 10px;"><strong>申请条件:</strong>实缴资本不低于1000万元,已在中国证券投资基金业协会完成登记备案。</p>
+                    </div>
+                </div>
 
-  <!-- 邢台市 -->
-  <div class="section city">
-    <h3>🏞️ 邢台市动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">市科技局：科技计划纸质任务书8月7日截止 ⚠️</div>
-        <div class="meta">2026年第一批自筹经费项目</div>
-        <div class="desc">已立项项目承担单位须于<b>8月7日前</b>提交带水印纸质任务书一式四份，逾期取消。</div>
-      </li>
-      <li>
-        <div class="title">市科技局：2026年度市级科技计划（第一批）自筹经费项目已下达</div>
-        <div class="meta">7月13日</div>
-        <div class="desc">企业提交截止7月26日已过，当前进入纸质任务书阶段。</div>
-      </li>
-      <li>
-        <div class="title">市科技局：19家新建市级研发平台公布</div>
-        <div class="meta">7月13日</div>
-        <div class="desc">含主配网智能运检与调控技术重点实验室等19家，需悬挂统一标牌。</div>
-      </li>
-      <li>
-        <div class="title">市工信局：86个共享工厂/共享载体已认定</div>
-        <div class="meta">7月26日已截止</div>
-        <div class="desc">2026年第一批共享工厂、共享载体认定完成，助力特色产业集群提档升级。</div>
-      </li>
-      <li>
-        <div class="title">市工信局：49家基础级智能工厂已认定</div>
-        <div class="meta">7月28日公示截止</div>
-        <div class="desc">2026年第二批基础级智能工厂认定完成，数字化转型持续推进。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>雄安新区促进智能网联汽车产业创新发展的激励措施</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-06-09</span>
+                        <span>⏰ 施行:2026-06-01起,有效期3年</span>
+                        <span>🏢 雄安新区工信科技数据局</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>主要支持措施:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>L4级自动驾驶商业运营企业:每辆车3元/公里,每年度最高600万元,连续支持不超过3年</li>
+                            <li>智能网联汽车服务消费新场景:按实际采购金额20%给予支持,最高200万元/年</li>
+                            <li>公共服务平台建设:按研发投入30%给予支持,单个项目最高500万元</li>
+                            <li>数据要素能力建设:按实际建设费用30%给予支持,最高200万元</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>申报平台:</strong>雄安新区产业互联网平台</p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- 沧州市 -->
-  <div class="section city">
-    <h3>🌊 沧州市动态</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">京津冀协同创新：燕赵绿色化工实验室运营成效</div>
-        <div class="meta">7月8日新闻发布会</div>
-        <div class="desc">韩布兴院士领衔，一期54亩已投入运营。34个专精特新"小巨人"科技特派团深入企业。3亿元膜材料创投基金设立。</div>
-      </li>
-      <li>
-        <div class="title">氢能产业：纳入京津冀氢能综合应用试点城市群</div>
-        <div class="meta">7月14日</div>
-        <div class="desc">四年内推广氢燃料电池汽车450辆，两大创新应用场景，预计争取中央补贴6300万元。</div>
-      </li>
-      <li>
-        <div class="title">市科技局：2026年度创新型中小企业申报</div>
-        <div class="meta">4月7日</div>
-        <div class="desc">持续进行中，关注申报进度。</div>
-      </li>
-    </ul>
-  </div>
+            <div class="section">
+                <h2 class="section-title">🏙️ 天津市政策动态</h2>
+                
+                <div class="policy-card">
+                    <h3>天津市2026年度创业投资奖励申报受理</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-23</span>
+                        <span>⏰ 申报截止:2026-08-28</span>
+                        <span>🏢 天津市科技局</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>支持标准:</strong>按创投基金投资本市未上市科技型企业实际投资额中社会资本部分的1%给予奖励,<span class="highlight">每家管理机构每年最高500万元</span>。</p>
+                        <p style="margin-top: 10px;"><strong>申报条件:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>创投管理机构需在中基协完成登记且基金已备案</li>
+                            <li>投资本市正常经营的未上市科技型企业满2年</li>
+                            <li>投资之日不早于2023年1月1日</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>申报方式:</strong>通过科服网(www.tten.cn)线上申报</p>
+                    </div>
+                </div>
 
-  <!-- 重点业务提示 -->
-  <div class="section tips">
-    <h3>💡 重点业务提示</h3>
-    <ul class="policy-list">
-      <li>
-        <div class="title">1. 今日四线紧急截止</div>
-        <div class="desc">①零碳工厂公示截止 → 关注客户是否在列；②雄安颠覆性技术专项截止 → 确认客户是否已提交；③天津保温材料规范材料报送 → 通知相关企业；④省工信厅无线电管理运维项目投标。</div>
-      </li>
-      <li>
-        <div class="title">2. 九部门科技金融数据通知——新机遇</div>
-        <div class="desc">26个数据指标赋能科技金融，创新积分制关联贷款利率。帮客户了解政策，争取融资便利。</div>
-      </li>
-      <li>
-        <div class="title">3. 卓越级智能工厂申报8月15日截止</div>
-        <div class="desc">国家级荣誉，已获评先进级的客户重点推荐。</div>
-      </li>
-      <li>
-        <div class="title">4. "领跑者"培育系统已开放</div>
-        <div class="desc">市级库录入至9/15，领跑者申请8/10-9/21，龙头培育9/15-9/30。立即排查集群客户！</div>
-      </li>
-      <li>
-        <div class="title">5. 邢台纸质任务书8/7截止</div>
-        <div class="desc">已立项项目单位务必按时提交带水印纸质任务书，逾期取消。</div>
-      </li>
-      <li>
-        <div class="title">6. 天津营商环境行动计划+创新积分制</div>
-        <div class="desc">"种子+天使+创投+产业+并购"基金群、企业创新积分制。排查天津客户中可对接资源。</div>
-      </li>
-      <li>
-        <div class="title">7. "药研保融通"+科技保险扩围</div>
-        <div class="desc">保费最高补贴50%，研发贷最高1000万、成果转化贷最高3000万。排查生物医药客户。</div>
-      </li>
-      <li>
-        <div class="title">8. 邯郸四批通知齐发（全部8/31截止）</div>
-        <div class="desc">研发平台绩效评估+新申报+科普基地评价+科普基地申报，逐一通知客户。</div>
-      </li>
-      <li>
-        <div class="title">9. 天津创投奖励+高企认定第二批</div>
-        <div class="desc">创投奖励最高500万(8/28)；高企第二批8/28。两项同一天截止，同步推进。</div>
-      </li>
-      <li>
-        <div class="title">10. 省政府投资基金投向清单征求意见（8/5）</div>
-        <div class="desc">四大板块覆盖传统/新兴/未来产业+生产性服务业，帮客户争取政策红利。</div>
-      </li>
-    </ul>
-  </div>
+                <div class="policy-card">
+                    <h3>天津市2026年度科技型中小企业评价工作</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-06-02</span>
+                        <span>⏰ 评价系统开放:2026-06-01至2026-08-31</span>
+                        <span>🏢 天津市科技局</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>时间安排:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>企业填报:6月1日-8月31日</li>
+                            <li>公示完成:10月15日前</li>
+                            <li>抽查完成:11月30日前</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>工作要求:</strong>对首次参评、研发费用较低、知识产权为零等企业开展实地核查,每批次入库企业按不低于5%比例集中随机抽查。</p>
+                    </div>
+                </div>
 
-  <!-- 分享栏 -->
-  <div class="share-bar">
-    <span style="font-size:14px;color:var(--text-secondary);">📲 一键分享：</span>
-    <button class="share-btn" onclick="shareWechat()">微信分享</button>
-    <button class="share-btn secondary" onclick="copyLink()">复制链接</button>
-    <span id="copy-tip2" style="font-size:13px;color:var(--green);display:none;">✅ 已复制</span>
-  </div>
+                <div class="policy-card">
+                    <h3>天津市科技专家库专家信息更新工作</h3>
+                    <div class="meta">
+                        <span>📅 发布:2026-07-10</span>
+                        <span>⏰ 更新截止:2026-08-23</span>
+                        <span>🏢 天津市科技局</span>
+                    </div>
+                    <div class="content">
+                        <p><strong>更新要求:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>在库专家于8月23日前登录"天津市科技计划项目管理信息系统"完成信息更新及确认</li>
+                            <li>未确认的将冻结专家资格,影响后续参与科技计划项目评审</li>
+                        </ul>
+                        <p style="margin-top: 10px;"><strong>咨询电话:</strong>左妍 022-23106167(技术咨询),郭田田 022-58832980(业务咨询)</p>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <p><b>🔗 固定访问地址：</b><a href="https://zhengwei6983.github.io/daily-report/" target="_blank">https://zhengwei6983.github.io/daily-report/</a></p>
-    <p style="margin-top:6px;">每日7:00自动更新 · 覆盖天津、河北（含雄安、邯郸、邢台、沧州）科技/工信/发改全口径政策</p>
-    <p style="margin-top:6px;">© 一站式科技服务 · 科创一站式(北京)科技服务有限公司</p>
-  </div>
+            <div class="share-section">
+                <p>📱 <strong>一键分享给微信好友</strong></p>
+                <p style="font-size: 0.95em; color: #0066cc;">固定访问地址:https://zhengwei6983.github.io/daily-report/</p>
+                <p style="font-size: 0.9em; color: #666; margin-top: 10px;">每日7:00自动更新 · 覆盖天津、河北、雄安新区科技政策动态</p>
+            </div>
+        </div>
 
-</div>
-
-<script>
-  function copyLink() {
-    const url = 'https://zhengwei6983.github.io/daily-report/';
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(url);
-    } else {
-      const ta = document.createElement('textarea');
-      ta.value = url; document.body.appendChild(ta);
-      ta.select(); document.execCommand('copy');
-      document.body.removeChild(ta);
-    }
-    const tip1 = document.getElementById('copy-tip');
-    const tip2 = document.getElementById('copy-tip2');
-    if (tip1) { tip1.style.display = 'inline'; setTimeout(()=>tip1.style.display='none', 2000); }
-    if (tip2) { tip2.style.display = 'inline'; setTimeout(()=>tip2.style.display='none', 2000); }
-  }
-  function shareWechat() {
-    const url = 'https://zhengwei6983.github.io/daily-report/';
-    const title = '🔬 一站式科技政策日报 | 2026年7月31日';
-    const desc = '今日重点：九部门科技金融数据通知、零碳工厂公示截止、天津营商环境升级、"小快轻准"数字化指引发布……';
-    if (typeof wx !== 'undefined' && wx.updateAppMessageShareData) {
-      wx.updateAppMessageShareData({ title, desc, link: url, imgUrl: '', success: function(){} });
-      alert('请在微信右上角"..."分享给好友');
-    } else {
-      copyLink();
-      alert('链接已复制！可粘贴到微信好友/群聊分享\n\n' + url);
-    }
-  }
-</script>
+        <div class="footer">
+            <p>© 2026 一站式科技政策日报 | 每天自动更新</p>
+            <p style="margin-top: 10px;">数据来源:各级政府科技部门官方网站</p>
+        </div>
+    </div>
 </body>
 </html>
