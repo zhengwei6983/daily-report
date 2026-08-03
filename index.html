@@ -678,61 +678,89 @@
 
 </div>
 
-<!-- Toast 提示 -->
-<div class="toast" id="toast"></div>
+<!-- 分享弹窗 -->
+<div id="shareModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff;border-radius:12px;padding:24px;max-width:400px;width:90%;margin:auto;position:relative;top:50%;transform:translateY(-50%);">
+    <div style="font-size:16px;font-weight:700;margin-bottom:16px;color:#1e293b;">📤 分享此政策</div>
+    <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:12px;font-size:13px;color:#1e293b;line-height:1.6;margin-bottom:16px;" id="shareText"></div>
+    <div style="display:flex;gap:10px;">
+      <button id="copyBtn" onclick="doCopy()" style="flex:1;padding:10px;background:#0d9488;color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;">📋 复制内容</button>
+      <button onclick="closeShare()" style="flex:1;padding:10px;background:#e5e7eb;color:#64748b;border:none;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;">关闭</button>
+    </div>
+    <div id="copyResult" style="margin-top:10px;font-size:13px;color:#0d9488;text-align:center;display:none;">✅ 已复制，可粘贴到微信发送</div>
+  </div>
+</div>
 
 <script>
-function showToast(msg) {
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.classList.add('show');
-  setTimeout(function(){ t.classList.remove('show'); }, 2000);
-}
+var currentShareText = '';
 
 function sharePolicy(title) {
   var url = 'https://zhengwei6983.github.io/daily-report/';
-  var text = '【科技政策日报】' + title + '\n' + url;
-
-  // 优先使用 Web Share API（手机端微信浏览器等支持）
-  if (navigator.share) {
-    navigator.share({
-      title: '一站式科技政策日报',
-      text: text,
-      url: url
-    }).catch(function(){});
-  } else {
-    // 降级：复制到剪贴板
-    copyToClipboard(text);
-  }
+  currentShareText = '【科技政策日报】' + title + '\n' + url;
+  document.getElementById('shareText').textContent = currentShareText;
+  document.getElementById('copyResult').style.display = 'none';
+  document.getElementById('copyBtn').textContent = '📋 复制内容';
+  document.getElementById('copyBtn').style.background = '#0d9488';
+  document.getElementById('shareModal').style.display = 'block';
 }
 
-function copyToClipboard(text) {
+function closeShare() {
+  document.getElementById('shareModal').style.display = 'none';
+}
+
+function doCopy() {
+  var btn = document.getElementById('copyBtn');
+  var result = document.getElementById('copyResult');
+  
+  // 方法1: 使用 navigator.clipboard
   if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(function(){
-      showToast('✅ 已复制分享内容，可粘贴到微信发送');
+    navigator.clipboard.writeText(currentShareText).then(function(){
+      result.style.display = 'block';
+      result.textContent = '✅ 已复制，可粘贴到微信发送';
+      result.style.color = '#0d9488';
+      btn.textContent = '✅ 已复制';
+      btn.style.background = '#059669';
     }).catch(function(){
-      fallbackCopy(text);
+      fallbackCopy();
     });
   } else {
-    fallbackCopy(text);
+    fallbackCopy();
   }
 }
 
-function fallbackCopy(text) {
+function fallbackCopy() {
   var ta = document.createElement('textarea');
-  ta.value = text;
+  ta.value = currentShareText;
   ta.style.position = 'fixed';
   ta.style.left = '-9999px';
   document.body.appendChild(ta);
+  ta.focus();
   ta.select();
   try {
-    document.execCommand('copy');
-    showToast('✅ 已复制分享内容，可粘贴到微信发送');
+    var ok = document.execCommand('copy');
+    if (ok) {
+      document.getElementById('copyResult').style.display = 'block';
+      document.getElementById('copyResult').textContent = '✅ 已复制，可粘贴到微信发送';
+      document.getElementById('copyResult').style.color = '#0d9488';
+      document.getElementById('copyBtn').textContent = '✅ 已复制';
+      document.getElementById('copyBtn').style.background = '#059669';
+    } else {
+      document.getElementById('copyResult').style.display = 'block';
+      document.getElementById('copyResult').textContent = '❌ 请手动长按上方内容复制';
+      document.getElementById('copyResult').style.color = '#dc2626';
+    }
   } catch(e) {
-    showToast('❌ 复制失败，请手动复制链接');
+    document.getElementById('copyResult').style.display = 'block';
+    document.getElementById('copyResult').textContent = '❌ 请手动长按上方内容复制';
+    document.getElementById('copyResult').style.color = '#dc2626';
   }
   document.body.removeChild(ta);
 }
+
+// 点击弹窗外部关闭
+document.getElementById('shareModal').addEventListener('click', function(e){
+  if (e.target === this) closeShare();
+});
 </script>
 </body>
 </html>
