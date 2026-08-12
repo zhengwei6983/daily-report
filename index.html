@@ -3,482 +3,440 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>一站式科技政策日报 | 2026年08月12日</title>
+<title>一站式科技政策日报 | 2026年8月13日</title>
 <style>
+:root{--primary:#1a56db;--primary-light:#e8f0fe;--red:#dc2626;--orange:#f59e0b;--green:#16a34a;--bg:#f3f4f6;--card:#fff;--text:#1f2937;--text2:#6b7280;--border:#e5e7eb;--hebei:#dc2626;--xiongan:#7c3aed;--xingtai:#2563eb;--handan:#0891b2;--cangzhou:#059669;--tianjin:#d97706}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:#f5f7fa;color:#333;line-height:1.7}
-.container{max-width:800px;margin:0 auto;padding:20px 16px}
-.header{background:linear-gradient(135deg,#1a73e8,#0d47a1);color:#fff;border-radius:16px;padding:32px 24px;margin-bottom:24px;text-align:center;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-50%;right:-50%;width:100%;height:100%;background:radial-gradient(circle,rgba(255,255,255,.1) 0%,transparent 70%);pointer-events:none}
-.header h1{font-size:26px;font-weight:700;margin-bottom:6px;position:relative}
-.header .date{font-size:15px;opacity:.9;position:relative}
-.header .subtitle{font-size:13px;opacity:.7;margin-top:8px;position:relative}
-.section{margin-bottom:28px}
-.section-title{font-size:18px;font-weight:700;color:#1a73e8;padding:12px 16px;border-left:4px solid #1a73e8;background:#e8f0fe;border-radius:0 8px 8px 0;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.section-title .icon{font-size:20px}
-.policy-card{background:#fff;border-radius:12px;padding:18px 20px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:box-shadow .2s,transform .2s;border:1px solid #eef2f7}
-.policy-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-1px)}
-.policy-card h3{font-size:15px;font-weight:600;color:#1a1a1a;margin-bottom:8px;line-height:1.5}
-.policy-card .meta{font-size:12px;color:#888;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:8px}
-.policy-card .meta span{background:#f0f2f5;padding:2px 8px;border-radius:4px}
-.policy-card .meta .urgent{background:#fff3e0;color:#e65100}
-.policy-card .meta .deadline{background:#fce4ec;color:#c62828}
-.policy-card .desc{font-size:14px;color:#555;line-height:1.7;margin-bottom:12px}
-.policy-card .actions{display:flex;gap:8px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:4px;padding:6px 14px;border-radius:6px;font-size:12px;text-decoration:none;cursor:pointer;border:none;transition:all .2s}
-.btn-primary{background:#1a73e8;color:#fff}
-.btn-primary:hover{background:#1557b0}
-.btn-share{background:#07c160;color:#fff}
-.btn-share:hover{background:#06ad56}
-.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.8);color:#fff;padding:12px 24px;border-radius:8px;font-size:14px;z-index:9999;display:none;animation:fadeInUp .3s ease}
-@keyframes fadeInUp{from{opacity:0;transform:translateX(-50%) translateY(20px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
-.summary-box{background:linear-gradient(135deg,#fff9c4,#fff8e1);border:1px solid #ffe082;border-radius:12px;padding:18px 20px;margin-bottom:24px}
-.summary-box h2{font-size:16px;color:#f57f17;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.summary-box ul{list-style:none;padding:0}
-.summary-box li{font-size:13px;color:#555;padding:4px 0;padding-left:18px;position:relative;line-height:1.6}
-.summary-box li::before{content:'▸';position:absolute;left:0;color:#f57f17}
-.deadline-box{background:linear-gradient(135deg,#ffebee,#fce4ec);border:1px solid #ef9a9a;border-radius:12px;padding:18px 20px;margin-bottom:24px}
-.deadline-box h2{font-size:16px;color:#c62828;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.deadline-box ul{list-style:none;padding:0}
-.deadline-box li{font-size:13px;color:#555;padding:4px 0;padding-left:18px;position:relative;line-height:1.6}
-.deadline-box li::before{content:'⏰';position:absolute;left:0;font-size:12px}
-.tips-box{background:linear-gradient(135deg,#e8f5e9,#c8e6c9);border:1px solid #a5d6a7;border-radius:12px;padding:18px 20px;margin-bottom:24px}
-.tips-box h2{font-size:16px;color:#2e7d32;margin-bottom:10px;display:flex;align-items:center;gap:6px}
-.tips-box ul{list-style:none;padding:0}
-.tips-box li{font-size:13px;color:#333;padding:5px 0;padding-left:18px;position:relative;line-height:1.6}
-.tips-box li .level{font-weight:700;margin-right:4px}
-.footer{text-align:center;padding:24px 0;color:#999;font-size:12px;border-top:1px solid #eee;margin-top:20px}
-.footer a{color:#1a73e8;text-decoration:none}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#1a56db 100%);color:#fff;padding:24px 16px 20px;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.header h1{font-size:22px;font-weight:700;letter-spacing:1px}
+.header .date{font-size:14px;opacity:.85;margin-top:4px}
+.header .subtitle{font-size:12px;opacity:.65;margin-top:2px}
+.container{max-width:780px;margin:0 auto;padding:16px}
+.urgent-bar{background:linear-gradient(90deg,#fef2f2,#fff7ed);border:1px solid #fecaca;border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.urgent-bar h3{font-size:15px;color:#dc2626;margin-bottom:8px}
+.urgent-bar ul{list-style:none;padding:0}
+.urgent-bar li{font-size:13px;color:#991b1b;padding:3px 0;padding-left:16px;position:relative}
+.urgent-bar li::before{content:"⏰";position:absolute;left:0;top:3px;font-size:11px}
+.region-section{margin-bottom:20px}
+.region-header{display:flex;align-items:center;padding:10px 16px;border-radius:10px;margin-bottom:10px;color:#fff;font-size:16px;font-weight:700}
+.region-header .count{margin-left:auto;background:rgba(255,255,255,.25);border-radius:20px;padding:2px 10px;font-size:12px;font-weight:500}
+.r-hebei{background:linear-gradient(135deg,#dc2626,#ef4444)}
+.r-xiongan{background:linear-gradient(135deg,#7c3aed,#8b5cf6)}
+.r-xingtai{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+.r-handan{background:linear-gradient(135deg,#0891b2,#06b6d4)}
+.r-cangzhou{background:linear-gradient(135deg,#059669,#10b981)}
+.r-tianjin{background:linear-gradient(135deg,#d97706,#f59e0b)}
+.policy-card{background:var(--card);border-radius:10px;padding:14px 16px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--border);transition:box-shadow .2s}
+.policy-card:hover{box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.policy-tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;color:#fff;margin-right:6px;vertical-align:middle}
+.tag-dept{background:#6366f1}
+.tag-type{background:#059669}
+.tag-urgent{background:#dc2626}
+.tag-new{background:#f59e0b}
+.policy-title{font-size:15px;font-weight:600;margin:6px 0 8px;line-height:1.5;color:var(--text)}
+.policy-summary{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.7}
+.policy-summary strong{color:var(--text);font-weight:600}
+.policy-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.policy-meta .date{font-size:12px;color:var(--text2)}
+.policy-actions{display:flex;gap:8px;margin-left:auto}
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 12px;border-radius:6px;font-size:12px;border:none;cursor:pointer;text-decoration:none;transition:all .2s;font-weight:500}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:#1e40af}
+.btn-wechat{background:#07c160;color:#fff}
+.btn-wechat:hover{background:#06ae56}
+.footer{text-align:center;padding:24px 16px;color:var(--text2);font-size:12px;line-height:1.8}
+.footer a{color:var(--primary)}
+.empty-region{background:var(--card);border-radius:10px;padding:20px;text-align:center;color:var(--text2);font-size:14px;border:1px dashed var(--border);margin-bottom:10px}
+/* 微信弹窗 */
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:999;align-items:center;justify-content:center}
+.modal-overlay.active{display:flex}
+.modal-box{background:#fff;border-radius:16px;padding:28px 24px;max-width:340px;width:90%;text-align:center;position:relative}
+.modal-box h4{font-size:16px;margin-bottom:12px;color:var(--text)}
+.modal-box p{font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.6}
+.modal-box .close-btn{position:absolute;top:10px;right:14px;font-size:20px;color:#999;cursor:pointer;background:none;border:none}
+.modal-box .share-text{background:#f9fafb;border:1px solid var(--border);border-radius:8px;padding:10px;font-size:12px;word-break:break-all;text-align:left;margin-bottom:12px;color:var(--text);user-select:all}
+.modal-box .copy-btn{background:var(--primary);color:#fff;border:none;padding:8px 24px;border-radius:8px;font-size:14px;cursor:pointer}
+.modal-box .copy-btn:hover{background:#1e40af}
+.copy-ok{color:var(--green);font-size:13px;margin-top:8px;display:none}
+@media(max-width:600px){.container{padding:10px}.policy-title{font-size:14px}.policy-actions{margin-left:0;margin-top:6px;width:100%}.btn{flex:1;justify-content:center}.header h1{font-size:18px}}
 </style>
 </head>
 <body>
-<div class="container">
 
 <div class="header">
 <h1>📋 一站式科技政策日报</h1>
-<div class="date">2026年08月12日 星期三</div>
-<div class="subtitle">覆盖河北省 · 雄安新区 · 邢台市 · 邯郸市 · 沧州市 · 天津市</div>
+<div class="date">2026年8月13日 星期四</div>
+<div class="subtitle">覆盖河北·雄安·邢台·邯郸·沧州·天津 | 自动整理</div>
 </div>
 
-<!-- 今日要点 -->
-<div class="summary-box">
-<h2>📌 今日要点</h2>
-<ul>
-<li>河北省发改委：公开征求《河北省新兴产业创新中心管理办法》等三个管理办法意见（9月9日截止）</li>
-<li>河北省生态环境厅+科技厅：组织申报京津冀环境综合治理国家科技重大专项2027年度第一批项目——41个项目+1个珍珠项目群</li>
-<li>河北省十二部门：《河北省文化创意扩能提质实施方案(2026-2030年)》印发——推动邢白瓷、磁州窑等文创化，赋能县域特色产业</li>
-<li>河北省县域特色产业集群关键核心技术攻关立项名单公布——邢台28个项目上榜，涵盖新能源线缆、人形机器人专用轴承等</li>
-<li>雄安新区人工智能实训基地正式投运——占地53亩、建筑面积7万平方米，已开设11期先导班覆盖460余人次</li>
-<li>天津市三部门：《天津市智能机器人产业创新发展行动方案(2026-2028年)》——到2028年核心产值突破200亿元，六项行动推动具身智能</li>
-<li>天津市科技局：2026年京津冀天津中心建设专项（原创性颠覆性专项）项目申报启动（8月28日截止）</li>
-<li>天津市科技局：2026年低碳科技领域科技专项政策宣讲会（8月13日下午）</li>
-<li>邯郸市科技局：第九届创新创业大赛复赛结果公布——25支队伍晋级决赛，41支择优推荐晋级省级行业赛</li>
-<li>全国智慧农业创新大赛在雄安举办——70支队伍参赛，哈工大AI智能激光除草机器人获第一名</li>
-</ul>
-</div>
+<div class="container">
 
-<!-- 紧急截止 -->
-<div class="deadline-box">
-<h2>🚨 紧急截止日期提醒</h2>
+<!-- 紧急截止提醒 -->
+<div class="urgent-bar">
+<h3>🔔 近期截止提醒</h3>
 <ul>
-<li><strong>8月13日（明日）</strong>：天津市低碳科技领域宣讲会报名截止 + 天津市智能机器人行动方案发布</li>
-<li><strong>8月14日（2天后）</strong>：河北省燕赵电力实验室联合基金预申报截止</li>
-<li><strong>8月15日（3天后）</strong>：智能工厂卓越级/领航级线上申报截止（河北省+天津市同步）</li>
-<li><strong>8月18日（6天后）</strong>：2026雄安高价值专利大赛报名截止</li>
-<li><strong>8月19日（7天后）</strong>：河北省科技型企业孵化器申报推荐截止 + 工信领域揭榜挂帅报送截止</li>
-<li><strong>8月20日（8天后）</strong>：河北省村镇微能网建设试点申报截止</li>
-<li><strong>8月25日</strong>：河北省科技型中小企业评价申报截止 + 高企第二批评审截止</li>
-<li><strong>8月26日</strong>：沧州燕赵绿色化工实验室创新专项截止</li>
-<li><strong>8月28日</strong>：天津市京津冀天津中心建设专项（原创性颠覆性专项）征集截止</li>
-<li><strong>9月4日</strong>：天津市京津冀协同创新项目申报截止 + 国际科技合作项目申报截止</li>
-<li><strong>9月5日</strong>：河北省燕赵电力实验室联合基金正式申报截止</li>
-<li><strong>9月9日</strong>：天津市科技重大专项和重点研发计划项目申报截止 + 河北省新兴产业创新中心管理办法征求意见截止</li>
+<li><strong>8月14日</strong> 邯郸创新创业大赛晋级项目PPT及回执表提交截止</li>
+<li><strong>8月17日</strong> 河北省"2026中国算力大会"成果征集企业申报截止</li>
+<li><strong>8月18日</strong> 邯郸创新创业大赛晋级项目培训会召开 / 2026雄安高价值专利大赛报名截止</li>
+<li><strong>8月19日</strong> 河北省科技型企业孵化器申报推荐截止</li>
+<li><strong>8月25日</strong> 河北省科学技术奖拟受理项目公示期截止</li>
+<li><strong>8月25日</strong> 天津市京津冀天津中心建设专项（内部提交截止）</li>
+<li><strong>8月28日</strong> 天津市京津冀天津中心建设专项（正式申报截止）</li>
+<li><strong>9月13日</strong> 天津市智能电网国家科技重大专项申报截止</li>
+<li><strong>9月17日</strong> 京津冀环境综合治理国家科技重大专项网上填报截止</li>
 </ul>
 </div>
 
 <!-- ==================== 河北省 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏛️</span>河北省</div>
+<div class="region-section">
+<div class="region-header r-hebei">河北省 <span class="count">8条</span></div>
 
 <div class="policy-card">
-<h3>河北省发改委：公开征求《河北省新兴产业创新中心管理办法》等三个管理办法意见</h3>
-<div class="meta">
-<span>河北省发改委</span>
-<span class="deadline">⏰ 征求意见截止9月9日</span>
+<span class="policy-tag tag-dept">省工信厅等九部门</span><span class="policy-tag tag-new">重要新政</span>
+<div class="policy-title">《河北省"人工智能+制造"专项行动实施方案》正式发布</div>
+<div class="policy-summary">构建<strong>"一核三化"发展体系</strong>，以算力算法数据一体化推进为核心，协同推动产业智能化、智能产业化和发展生态化。<strong>到2027年</strong>：培育4-5个行业领先工业大模型、30个工业智能体、10个高质量工业数据集、100个典型应用场景、300个先进级智能工厂。开展<strong>普惠算力专项行动</strong>降低中小企业用算成本，构建"一区两带"产业格局（雄安为核心+算力产业带+具身智能产业带）。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.ce.cn/xwzx/gnsz/gdxw/202608/t20260812_3144111.shtml" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省工信厅等九部门发布《河北省"人工智能+制造"专项行动实施方案》| 构建一核三化发展体系，到2027年培育4-5个工业大模型、300个先进级智能工厂')">📱 分享到微信</button>
 </div>
-<div class="desc">为深入实施创新驱动发展战略，推进科技创新和产业创新深度融合，省发改委起草了《河北省新兴产业创新中心管理办法（征求意见稿）》《河北省产业技术工程化中心管理办法（征求意见稿）》《河北省发展改革委企业技术中心管理办法（征求意见稿）》，现向社会公开征求意见。意见请以书面形式反馈至创新和高技术发展处，邮箱：gjs@hbdrc.gov.cn。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://hbdrc.hebei.gov.cn/gggs_980/202608/t20260811_138037.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省发改委：征求《新兴产业创新中心管理办法》等三个管理办法意见','https://hbdrc.hebei.gov.cn/gggs_980/202608/t20260811_138037.html')">📤 分享到微信</button>
-</div>
-</div>
-
-<div class="policy-card">
-<h3>河北省生态环境厅+科技厅：组织申报京津冀环境综合治理国家科技重大专项2027年度第一批项目</h3>
-<div class="meta">
-<span>河北省生态环境厅、科技厅</span>
-<span class="deadline">⏰ 关注申报截止时间</span>
-</div>
-<div class="desc">围绕天空地海一体化环境感知网、跨介质复合污染调控模拟器、空气质量改善和重点行业深度减排、水生态环境全面改善、美丽绿色生态样板城、区域生态安全与农业农村系统提质增效、跨介质系统治理、生态环境管理创新八大板块，共设置41个项目、1个珍珠项目群，采用前补助和事前立项事后补助两种资金支持方式。申报单位通过国家科技管理信息系统公共服务平台在线申报。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://hbepb.hebei.gov.cn/hbhjt/zwgk/fdzdgknr/tongzhigonggao/101782880932132.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省生态环境厅+科技厅：京津冀环境综合治理国家科技重大专项2027年度第一批项目','https://hbepb.hebei.gov.cn/hbhjt/zwgk/fdzdgknr/tongzhigonggao/101782880932132.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>河北省十二部门：《河北省文化创意扩能提质实施方案(2026-2030年)》印发</h3>
-<div class="meta">
-<span>河北省文旅厅等十二部门</span>
-<span>2026-08-11发布</span>
+<span class="policy-tag tag-dept">省科技厅</span>
+<div class="policy-title">关于2026年度河北省科学技术奖拟受理项目的公示</div>
+<div class="policy-summary">公示2026年度省自然科学奖、技术发明奖、科学技术进步奖拟受理项目：<strong>自然科学奖118项、技术发明奖50项、科学技术进步奖780项</strong>（不含企业技术创新奖）。公示期15天，自8月11日至8月25日。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-11 发布 | ⏰ 公示截止 8月25日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026081109410053853/index.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省科技厅｜2026年度省科学技术奖拟受理项目公示（948项），公示至8月25日')">📱 分享到微信</button>
 </div>
-<div class="desc">到2030年培育形成一批在全国有影响力的文化创意企业和品牌。重点任务包括：推动邢台邢白瓷、邯郸磁州窑、唐山骨质瓷等文创化升级；依托沧州玻璃制造、清河羊绒、高阳毛巾等产业集群，推动创意设计赋能县域制造；培育"到雄安，游未来"城市旅游品牌、石家庄"活力之城"、邯郸"成语之都"等城市文化IP。探索建立文化资源IP授权开发体系。</div>
-<div class="actions">
+</div>
+</div>
+
+<div class="policy-card">
+<span class="policy-tag tag-dept">省生态环境厅+省科技厅</span>
+<div class="policy-title">关于组织申报京津冀环境综合治理国家科技重大专项2027年度第一批公开竞争择优项目的通知</div>
+<div class="policy-summary">组织申报京津冀环境综合治理国家科技重大专项。<strong>网上填报时间</strong>：2026年8月7日8:00至9月17日16:00。省生态环境厅、省科技厅作为推荐单位，将于9月21日16:00前完成推荐确认。同一项目只能通过单个推荐单位申报，禁止多头重复申报。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布 | ⏰ 申报截止 9月17日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026081208593189138/index.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省｜京津冀环境综合治理国家科技重大专项2027年度第一批项目申报｜截止9月17日')">📱 分享到微信</button>
+</div>
+</div>
+</div>
+
+<div class="policy-card">
+<span class="policy-tag tag-dept">省科技厅+平安财险</span><span class="policy-tag tag-new">新发布</span>
+<div class="policy-title">京津冀推出"成果转化保""科创保"系列科技保险</div>
+<div class="policy-summary">河北省科技厅联合平安财险河北分公司推出<strong>"京津冀成果转化保""京津冀科创保"</strong>系列科技保险产品，覆盖生物医药、机器人、人工智能等领域全链条风险，相关产品<strong>最高可享50%保费补贴</strong>。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://new.qq.com/rain/a/20260813A02PQ700" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省科技厅联合平安财险推出"成果转化保""科创保"系列科技保险｜最高50%保费补贴')">📱 分享到微信</button>
+</div>
+</div>
+</div>
+
+<div class="policy-card">
+<span class="policy-tag tag-dept">十二部门联合</span>
+<div class="policy-title">《河北省文化创意扩能提质实施方案(2026-2030年)》印发</div>
+<div class="policy-summary">省文旅厅会同科技厅、工信厅等十二部门印发。推动<strong>邢白瓷、磁州窑</strong>等文创化，开发联名款文创产品。构建"1+15"政策体系，推进服务业扩能提质。到2030年培育形成一批全国有影响力的文化创意企业和品牌。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-11 发布</span>
+<div class="policy-actions">
 <a class="btn btn-primary" href="https://whly.hebei.gov.cn/c/2026-08-11/586015.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省十二部门：《文化创意扩能提质实施方案(2026-2030年)》','https://whly.hebei.gov.cn/c/2026-08-11/586015.html')">📤 分享到微信</button>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省十二部门印发《文化创意扩能提质实施方案(2026-2030年)》｜推动邢白瓷、磁州窑等文创化')">📱 分享到微信</button>
 </div>
-</div>
-
-<div class="policy-card">
-<h3>河北省县域特色产业集群关键核心技术攻关立项名单公布——邢台28个项目上榜</h3>
-<div class="meta">
-<span>河北省科技厅</span>
-<span>2026-08-10公布</span>
-</div>
-<div class="desc">2026年度河北省县域特色产业集群关键核心技术攻关立项名单公布，邢台28个项目上榜，涉及高端装备制造、新材料、食品加工、新能源、纺织服装等领域，重点在新能源线缆、钢铁节能降碳、人形机器人专用轴承、智能童车、高性能轧辊等细分赛道寻求突破。获批项目优先享受研发费用加计扣除、科技创新券等支持，可优先对接京津高校和省级科技特派团资源。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://finance.sina.cn/2026-08-10/detail-inimvxcf2713889.d.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省县域特色产业集群关键核心技术攻关立项名单公布——邢台28个项目上榜','https://finance.sina.cn/2026-08-10/detail-inimvxcf2713889.d.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>河北省科技厅：2026年度省自然科学基金燕赵电力实验室联合基金项目申报</h3>
-<div class="meta">
-<span>河北省科技厅</span>
-<span class="deadline">⏰ 预申报8月14日截止 / 正式申报9月5日截止</span>
+<span class="policy-tag tag-dept">省工信厅</span><span class="policy-tag tag-urgent">8月19日截止</span>
+<div class="policy-title">关于开展2026年工业和信息化部科技型企业孵化器申报工作的通知</div>
+<div class="policy-summary">组织我省符合条件并参与火炬统计的孵化器申报。<strong>各归口管理部门于8月19日前</strong>将审核推荐的申报书PDF电子版发送邮箱，正式推荐函及汇总表报送省工信厅高新技术处。鼓励原国家级孵化器积极申报（原国家级资格将于2027年底自动失效）。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布 | ⏰ 推荐截止 8月19日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://shidz.gov.cn/columns/fc6b4309-d198-4db4-9c9a-8358ef6ba98c/202608/12/613725b4-5bcb-409e-905d-669dcd777f46.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省工信厅｜2026年工信部科技型企业孵化器申报｜推荐截止8月19日')">📱 分享到微信</button>
 </div>
-<div class="desc">预申报材料邮寄至石家庄市裕华区东风路159号411室基金办，正式申报通过"河北省科技计划项目综合服务平台"在线操作。咨询电话：0311-85810058、85817132。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://www.sohu.com/a/1060912470_120658388" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省科技厅：燕赵电力实验室联合基金项目申报（预申报8月14日截止）','https://www.sohu.com/a/1060912470_120658388')">📤 分享到微信</button>
-</div>
-</div>
-
-<div class="policy-card">
-<h3>河北省工信厅：2026年工信部科技型企业孵化器申报工作启动</h3>
-<div class="meta">
-<span>河北省工信厅</span>
-<span class="deadline">⏰ 8月19日前推荐报送</span>
-</div>
-<div class="desc">符合《工业和信息化部科技型企业孵化器管理办法》条件要求并参与火炬统计的孵化器均可申报。通过"统一身份认证与单点登录平台"在线填报，各归口管理部门8月19日前将审核推荐材料报送省工信厅高新技术处。鼓励原国家级孵化器积极申报（原国家级资格将于2027年底自动失效）。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://www.sohu.com/a/1060940280_121106991" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省工信厅：2026年工信部科技型企业孵化器申报（8月19日推荐截止）','https://www.sohu.com/a/1060940280_121106991')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>河北省工信厅：2026年工业和信息化领域创新任务揭榜挂帅工作</h3>
-<div class="meta">
-<span>工信部等七部门 / 河北省工信厅</span>
-<span class="deadline">⏰ 8月19日报送截止</span>
+<span class="policy-tag tag-dept">省工信厅</span><span class="policy-tag tag-urgent">8月17日截止</span>
+<div class="policy-title">关于征集"2026中国算力大会"发布成果及做好参会参展工作的通知</div>
+<div class="policy-summary">2026中国算力大会将于9月上旬在廊坊召开。面向全省征集优质技术成果、创新应用场景。<strong>企业自主申报截止8月17日</strong>。征集范围包括：算网融合基础设施、人工智能前沿创新应用、算力赋能传统产业转型、低空经济等新兴赛道、首发首秀创新产品五大方向。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-11 发布 | ⏰ 企业申报截止 8月17日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.sohu.com/a/1061793866_121106991" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省工信厅｜2026中国算力大会成果征集｜企业申报截止8月17日，大会9月上旬廊坊召开')">📱 分享到微信</button>
 </div>
-<div class="desc">围绕未来产业、装备制造、信息技术、通信、人工智能、消费品6个方向，系统布局24个专题。申报方式包括线上系统申报与线下材料申报，于2026年8月19日下班前报送至经济发展局工业信息。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://shidz.gov.cn/columns/fc6b4309-d198-4db4-9c9a-8358ef6ba98c/202608/10/1062512c-d7ee-4ad5-af5e-918ec66c8741.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省工信厅：2026年工信领域创新任务揭榜挂帅（8月19日截止）','https://shidz.gov.cn/columns/fc6b4309-d198-4db4-9c9a-8358ef6ba98c/202608/10/1062512c-d7ee-4ad5-af5e-918ec66c8741.html')">📤 分享到微信</button>
-</div>
-</div>
-
-<div class="policy-card">
-<h3>河北省工信厅等六部门：智能工厂梯度培育行动</h3>
-<div class="meta">
-<span>工信部等六部门 / 河北省工信厅</span>
-<span class="deadline">⏰ 8月15日线上申报截止</span>
-</div>
-<div class="desc">2026版梯度培育体系：基础级（规上企业自评自建）→先进级（市级认定）→卓越级（须AI场景≥30%）→领航级（须AI场景≥60%，新增2年培育期）。全国统一截止8月15日，全流程线上开展。卓越级须覆盖工厂建设、研发设计、生产作业、生产管理、运营管理五个环节。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://m.11467.com/product/d54915726.htm" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省工信厅等六部门：智能工厂梯度培育行动（8月15日截止）','https://m.11467.com/product/d54915726.htm')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>河北省发改委：村镇微能网建设试点申报</h3>
-<div class="meta">
-<span>河北省发改委</span>
-<span class="deadline">⏰ 8月20日截止</span>
+<span class="policy-tag tag-dept">省市场监督管理局</span>
+<div class="policy-title">河北省产业知识产权运营中心建设管理工作指引(暂行)印发</div>
+<div class="policy-summary">明确建设标准、认定流程与管理机制。要求年度知识产权<strong>转化运营金额不低于300万元</strong>，辐射产业链主体不少于12家。省级中心实行3年建设周期动态管理，每年绩效评价，每3年综合考评。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://tech.sina.cn/2026-08-12/detail-inimzivx4161371.d.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'河北省印发产业知识产权运营中心建设指引｜年度转化运营≥300万元，3年建设周期动态管理')">📱 分享到微信</button>
 </div>
-<div class="desc">试点项目须严格执行：电力系统电压等级110千伏及以下，系统装机容量不超过50兆瓦，建成后可再生能源最低消费比重不低于50%，新能源年自发自用电量占总可用发电量比例不低于60%。每市最多报送1个试点项目，8月20日前将实施方案报送省发改委。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://finance.sina.com.cn/roll/2026-08-10/doc-inimvxcf8020064.shtml" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('河北省发改委：村镇微能网建设试点申报（8月20日截止）','https://finance.sina.com.cn/roll/2026-08-10/doc-inimvxcf8020064.shtml')">📤 分享到微信</button>
 </div>
 </div>
 
 </div>
 
 <!-- ==================== 雄安新区 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏗️</span>雄安新区</div>
+<div class="region-section">
+<div class="region-header r-xiongan">雄安新区 <span class="count">3条</span></div>
 
 <div class="policy-card">
-<h3>雄安人工智能实训基地正式投运——"一院一园一平台一基地"AI格局成型</h3>
-<div class="meta">
-<span>雄安新区</span>
-<span>2026-08-10报道</span>
+<span class="policy-tag tag-dept">雄安新区</span><span class="policy-tag tag-new">重磅进展</span>
+<div class="policy-title">雄安人工智能实训基地正式投运</div>
+<div class="policy-summary">位于启动区科学园片区，占地约<strong>53亩、建筑面积7万平方米</strong>。已开设先导班11期，覆盖460余人次。聚焦"人工智能+信息技术"实训赛道，采用"运营公司+实训基地+人才学院"三位一体模式。雄安新区人工智能产业形成<strong>"一院一园一平台一基地"</strong>发展格局（研究院+产业园+公共研发平台+实训基地）。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 人民日报报道</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.rmxiongan.com/n2/2026/0812/c383557-41665677.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'雄安新区人工智能实训基地正式投运｜占地53亩，已形成一院一园一平台一基地发展格局')">📱 分享到微信</button>
 </div>
-<div class="desc">8月6日，雄安人工智能实训基地揭牌投运。基地位于启动区科学园片区，占地约53亩、建筑面积7万平方米，是服务北京非首都功能疏解、支撑新区AI产业发展的重点公共服务平台。已开设先导班11期覆盖460余人次。雄安已形成"一院一园一平台一基地"发展格局（AI研究院+AI产业园+AI公共研发平台+AI实训基地），AI生态体系初步形成。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://www.163.com/dy/article/L3V8IS9T0514R9OJ.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('雄安人工智能实训基地正式投运','https://www.163.com/dy/article/L3V8IS9T0514R9OJ.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>2026雄安高价值专利大赛报名中——京津冀三地+雄安新区联合主办</h3>
-<div class="meta">
-<span>京津冀知识产权部门+雄安新区</span>
-<span class="deadline">⏰ 征集/初赛8月截止</span>
-</div>
-<div class="desc">主题为"营造良好创新环境 助力雄安新区建设"。设金奖5项、银奖10项、优秀奖20项，颁发奖杯证书+转化激励+知识产权服务包。获奖项目在雄安落地可享受新区产业优惠政策。参赛领域包括新一代信息技术、高端装备及智能制造、新材料、生物医药、绿色能源等。参赛项目须具有至少一项有效发明或实用新型专利。</div>
-<div class="actions">
+<span class="policy-tag tag-dept">京津冀三地+雄安新区</span><span class="policy-tag tag-urgent">8月18日截止</span>
+<div class="policy-title">2026雄安高价值专利大赛启动报名</div>
+<div class="policy-summary">主题"营造良好创新环境 助力雄安新区建设"。设置<strong>金奖5项、银奖10项、优秀奖20项</strong>，获奖项目落雄安可享产业优惠政策。京津冀三地知识产权部门共同签署《人工智能促进专利转化框架合作协议》。<strong>报名截止8月18日</strong>，征集领域包括新一代信息技术、高端装备、新材料、生物医药、绿色能源等。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 | ⏰ 报名截止 8月18日</span>
+<div class="policy-actions">
 <a class="btn btn-primary" href="https://hbxw.hebnews.cn/news/621206.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('2026雄安高价值专利大赛报名中（8月截止）','https://hbxw.hebnews.cn/news/621206.html')">📤 分享到微信</button>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'2026雄安高价值专利大赛报名中｜金奖5项+银奖10项，获奖落雄安享产业优惠｜截止8月18日')">📱 分享到微信</button>
+</div>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>全国智慧农业创新大赛暨雄安智慧农业技术应用大赛举办</h3>
-<div class="meta">
-<span>农业农村部信息中心、河北省农业农村厅、雄安新区</span>
-<span>2026-08-11报道</span>
+<span class="policy-tag tag-dept">河北日报/人民日报</span>
+<div class="policy-title">人民日报整版关注雄安新区高质量建设和发展</div>
+<div class="policy-summary">强调推动科技创新与产业创新深度融合，因地制宜发展新质生产力。加快<strong>空天信息和卫星互联网、人工智能、新材料</strong>等产业发展。发挥"雄才十六条"政策效应，设立重大产业基金、创业投资基金、未来产业引导基金。当前正加快推动"一院一园一平台一基地"全部投入运行。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 人民日报第08版</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.hebtv.com/19/19js/zx/tt/12457393.shtml" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'人民日报整版关注雄安新区｜加快空天信息、人工智能、新材料等产业发展，设未来产业引导基金')">📱 分享到微信</button>
 </div>
-<div class="desc">来自全国各地70支队伍参赛，集中呈现智慧农业领域最新创新成果。哈工大AI智能激光除草机器人获激光除草机器人赛道第一名。大赛由农业农村部信息中心、河北省农业农村厅、雄安新区管委会共同主办。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://new.qq.com/rain/a/20260811A03YFD00" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('全国智慧农业创新大赛在雄安举办','https://new.qq.com/rain/a/20260811A03YFD00')">📤 分享到微信</button>
 </div>
 </div>
 
 </div>
 
 <!-- ==================== 邢台市 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏙️</span>邢台市</div>
+<div class="region-section">
+<div class="region-header r-xingtai">邢台市 <span class="count">2条</span></div>
 
 <div class="policy-card">
-<h3>邢台28个项目入选省县域特色产业集群关键核心技术攻关立项名单</h3>
-<div class="meta">
-<span>河北省科技厅</span>
-<span>2026-08-10公布</span>
+<span class="policy-tag tag-dept">省级立项·邢台</span><span class="policy-tag tag-new">好消息</span>
+<div class="policy-title">邢台28个项目入选河北省县域特色产业集群关键核心技术攻关立项名单</div>
+<div class="policy-summary">2026年度河北省县域特色产业集群关键核心技术攻关立项名单公布，<strong>邢台28个项目上榜</strong>，涉及高端装备制造、新材料、食品加工、新能源、纺织服装等领域。重点在<strong>新能源线缆、钢铁节能降碳、人形机器人专用轴承、智能童车、高性能轧辊</strong>等细分赛道寻求突破。获批项目优先享受研发费用加计扣除、科技创新券等支持。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.sohu.com/a/1061326604_121117446" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'邢台28个项目入选省核心技术攻关立项名单｜涉及新能源线缆、人形机器人轴承、智能童车等')">📱 分享到微信</button>
 </div>
-<div class="desc">涉及高端装备制造、新材料、食品加工、新能源、纺织服装等领域，重点在新能源线缆、钢铁节能降碳、人形机器人专用轴承、智能童车、高性能轧辊等细分赛道寻求突破。临西县塞艾斯联合燕赵钢铁实验室，通过热力学仿真完成合金配比筛选，自研高洁净专用轴承钢，滚动接触疲劳寿命提升190%以上，可适配人形机器人各关节工况。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://finance.sina.cn/2026-08-10/detail-inimvxcf2713889.d.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('邢台28个项目入选省关键核心技术攻关立项名单','https://finance.sina.cn/2026-08-10/detail-inimvxcf2713889.d.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>邢台市《2026年职工职业技能竞赛实施方案》印发</h3>
-<div class="meta">
-<span>邢台市</span>
-<span>2026-08-10</span>
+<span class="policy-tag tag-dept">邢台市科技局</span>
+<div class="policy-title">2026年度邢台市级科技计划（第一批）立项通知</div>
+<div class="policy-summary">邢台市科学技术局发布2026年度市级科技计划（第一批）立项通知。以临西县人民医院为例，<strong>6项课题全部入选</strong>，覆盖骨科康复、医学影像、中医护理、血管外科、中医脑病五大领域，标志着临床科研创新实力得到市级认可。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://baobao.sohu.com/a/1061281906_122678613" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'邢台市2026年度市级科技计划第一批立项公布｜临西县人民医院6项课题入选')">📱 分享到微信</button>
 </div>
-<div class="desc">构建"市级树标杆、县级创特色、企业强基础"技能竞赛发展格局。市级打造"1+10+100"竞赛矩阵：1场市级职工创新大赛、10项省赛选拔赛、100项一类职业技能竞赛。年底前专精特新"小巨人"企业、省级特色产业集群内规上企业技能竞赛开展覆盖率不低于50%。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://www.toutiao.com/article/7672399980753125907" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('邢台市《2026年职工职业技能竞赛实施方案》印发','https://www.toutiao.com/article/7672399980753125907')">📤 分享到微信</button>
 </div>
 </div>
 
 </div>
 
 <!-- ==================== 邯郸市 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏙️</span>邯郸市</div>
+<div class="region-section">
+<div class="region-header r-handan">邯郸市 <span class="count">2条</span></div>
 
 <div class="policy-card">
-<h3>第九届邯郸市创新创业大赛复赛结果公布——25支队伍晋级决赛</h3>
-<div class="meta">
-<span>邯郸市科技局</span>
-<span>2026-08-10公布</span>
+<span class="policy-tag tag-dept">邯郸市科技局</span>
+<div class="policy-title">第九届邯郸市创新创业大赛复赛圆满收官</div>
+<div class="policy-summary">100个优秀项目同台竞技，采用"现场+网络"路演答辩方式（5分钟展示+3分钟答辩）。<strong>25支队伍晋级市级决赛</strong>，择优推荐<strong>41支队伍晋级省级行业赛</strong>（主体赛）。项目覆盖现代化钢铁、高端装备制造、新能源、低空经济、电子信息等关键领域。同步开展知识产权咨询服务和经开区招商推介。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-11</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://www.hd.gov.cn/hdyw/bmdt/bm/kjj/202608/t20260811_2212904.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'邯郸市第九届创新创业大赛复赛收官｜25支队伍晋级决赛，41支晋级省级行业赛')">📱 分享到微信</button>
 </div>
-<div class="desc">8月5日至7日，100个优秀项目同台竞技。采用"现场+网络"路演答辩方式，按"5分钟展示+3分钟答辩"角逐。最终25支队伍晋级市级决赛（企业组10家+团队组15家），同时择优推荐41支队伍晋级省级行业赛（主体赛）。项目覆盖现代化钢铁、高端装备制造、新能源、低空经济、电子信息等关键领域。</div>
-<div class="actions">
-<a class="btn btn-primary" href="http://hdskjj.hd.gov.cn/web/info.aspx?id=31233" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('第九届邯郸市创新创业大赛复赛结果公布','http://hdskjj.hd.gov.cn/web/info.aspx?id=31233')">📤 分享到微信</button>
+</div>
+</div>
+
+<div class="policy-card">
+<span class="policy-tag tag-dept">邯郸市科技局</span><span class="policy-tag tag-urgent">8月14日截止</span>
+<div class="policy-title">关于举办第九届邯郸市创新创业大赛晋级项目培训会的通知</div>
+<div class="policy-summary">为提升参赛项目整体水平，定于<strong>8月18日</strong>在邯郸科创产业园举办晋级项目培训会。内容包括项目PPT制作优化、专家逐一点评、路演技巧及答辩应对。<strong>PPT及参会回执提交截止8月14日17:00</strong>。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 | ⏰ PPT提交截止 8月14日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="http://hdskjj.hd.gov.cn/web/info.aspx?id=31248" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'邯郸市科技局｜创新创业大赛晋级培训会8月18日召开｜PPT提交截止8月14日')">📱 分享到微信</button>
+</div>
 </div>
 </div>
 
 </div>
 
 <!-- ==================== 沧州市 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏙️</span>沧州市</div>
-
-<div class="policy-card">
-<h3>东光县以科技创新驱动县域特色产业升级——高企79家、国家科小206家</h3>
-<div class="meta">
-<span>沧州市东光县</span>
-<span>2026-08-10报道</span>
-</div>
-<div class="desc">东光县先后出台《推动科技创新若干措施》《科技创新专项资金管理办法》等政策文件，搭建产业共享研发中心，整合天津大学、天津工业大学等高校资源，推动骨干企业与高校定向合作。截至目前，全县已有高新技术企业79家、国家科技型中小企业206家、省级科技型中小企业1242家。汉风装备能源实现由配件加工向空气压缩机整机自主制造转型。</div>
-<div class="actions">
-<a class="btn btn-primary" href="http://www.dongguang.gov.cn/dongguang/c101019/202608/145eea4060cd409da9f3efba0b5d6765.shtml" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('东光县以科技创新驱动县域特色产业升级','http://www.dongguang.gov.cn/dongguang/c101019/202608/145eea4060cd409da9f3efba0b5d6765.shtml')">📤 分享到微信</button>
-</div>
-</div>
-
+<div class="region-section">
+<div class="region-header r-cangzhou">沧州市 <span class="count">0条</span></div>
+<div class="empty-region">今日暂无沧州市独立发布的科技政策动态<br><small>（省级政策已覆盖沧州相关领域，如"文化创意赋能县域制造"涉及沧州玻璃制造产业集群）</small></div>
 </div>
 
 <!-- ==================== 天津市 ==================== -->
-<div class="section">
-<div class="section-title"><span class="icon">🏙️</span>天津市</div>
+<div class="region-section">
+<div class="region-header r-tianjin">天津市 <span class="count">5条</span></div>
 
 <div class="policy-card">
-<h3>天津市三部门：《天津市智能机器人产业创新发展行动方案(2026-2028年)》</h3>
-<div class="meta">
-<span>天津市工信局、发改委、科技局</span>
-<span>2026-08-10发布</span>
+<span class="policy-tag tag-dept">市工信局+发改委+科技局</span><span class="policy-tag tag-new">重要方案</span>
+<div class="policy-title">《天津市智能机器人产业创新发展行动方案(2026-2028年)》发布</div>
+<div class="policy-summary">到2028年底，智能机器人产业<strong>核心产值突破200亿元</strong>，产值年均增速超15%，京津冀区域配套率提升至60%以上。六项行动：核心技术攻关（研发工业类专用模型≥200个、高质量数据集≥100个）、产品谱系培优、强企兴链聚群、共性平台赋能、京津冀协同提速、应用场景示范。"117项目"片区将建<strong>机器人小镇</strong>。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://tht.gov.cn/contents/16930/613809.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'天津市三部门发布《智能机器人产业创新发展行动方案(2026-2028)》｜核心产值目标200亿+，117项目片区建机器人小镇')">📱 分享到微信</button>
 </div>
-<div class="desc">到2028年底：核心产值突破200亿元，京津冀配套率提升至60%以上，产值年均增速超15%。培育产值超10亿元企业3家以上、国家级专精特新"小巨人"20家。建设不少于20个实景实训空间，形成100个以上示范应用场景。实施六项行动：核心技术攻关、产品谱系培优、强企兴链聚群、共性平台赋能、京津冀协同提速、应用场景示范。重点发展人形及仿生机器人，推动规模化量产。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202608/t20260810_7349880.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市智能机器人产业创新发展行动方案(2026-2028年)','https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202608/t20260810_7349880.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>天津市科技局：2026年京津冀天津中心建设专项（原创性颠覆性专项）项目申报</h3>
-<div class="meta">
-<span>天津市科技局</span>
-<span class="deadline">⏰ 8月28日截止</span>
+<span class="policy-tag tag-dept">市工信局等五部门</span><span class="policy-tag tag-new">资金申报</span>
+<div class="policy-title">2026年第一批天津市制造业高质量发展专项资金项目申报指南</div>
+<div class="policy-summary">五部门联合发布，涵盖<strong>13个申报方向</strong>：高质量投资项目、高端装备（机器人方向）、单项冠军、专精特新企业、应用场景建设（电子信息方向）、软件和信息技术服务业、工业设计、卡点技术攻关、创新平台发展（工程研究中心）、人工智能试验区重大平台、市级重点实验室创新能力建设、智能化数字化应用场景（大数据/区块链/物联网/元宇宙）、数据要素支撑。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-11 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202608/t20260804_7347181.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'天津市2026年第一批制造业高质量发展专项资金｜13个方向申报（含人工智能、机器人、专精特新等）')">📱 分享到微信</button>
 </div>
-<div class="desc">重点围绕新一代信息技术、智能制造与机器人、生物医药、新能源、新材料等领域的原创性颠覆性技术成果的"研、转、落"。支持三个类别：技术成果研发类、转化类、落地类（落地企业注册时间为2025年8月1日以后）。优先支持获国家重点研发计划颠覆性技术创新专项立项的项目、全国颠覆性技术创新大赛获奖项目。</div>
-<div class="actions">
+</div>
+</div>
+
+<div class="policy-card">
+<span class="policy-tag tag-dept">市科技局</span><span class="policy-tag tag-urgent">8月28日截止</span>
+<div class="policy-title">关于2026年京津冀国家技术创新中心天津中心建设专项(原创性颠覆性专项)申报通知</div>
+<div class="policy-summary">重点围绕新一代信息技术、智能制造与机器人、生物医药、新能源、新材料等领域。支持三类：<strong>研发类（100万）、转化类（150万）、落地类（100万）</strong>，须按不低于1:3配套自筹。分两阶段：第一阶段建立培育库（8月25日前内部提交），第二阶段正式线上申报（<strong>截止8月28日</strong>）。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 | ⏰ 正式申报截止 8月28日</span>
+<div class="policy-actions">
 <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260810_7350338.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市科技局：京津冀天津中心建设专项（原创性颠覆性专项）（8月28日截止）','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260810_7350338.html')">📤 分享到微信</button>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'天津市科技局｜京津冀天津中心建设专项（原创性颠覆性专项）｜研发100万/转化150万/落地100万｜截止8月28日')">📱 分享到微信</button>
 </div>
-</div>
-
-<div class="policy-card">
-<h3>天津市科技局：2026年低碳科技领域科技专项政策宣讲会</h3>
-<div class="meta">
-<span>天津市科技局</span>
-<span class="urgent">📢 8月13日（明日）15:00-16:30</span>
-</div>
-<div class="desc">在天开高教科创园报告厅召开，宣讲低碳科技领域市级科技专项政策，涉及2026年市级科技专项申报指南：社会发展科技重大专项、未来产业科技重大专项深地海洋专题、社会事业与现代农业重点研发计划。报名截止8月12日18:00。联系人：市科技发展战略研究院董晓珊022-24439402。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260810_7350334.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市科技局：低碳科技领域科技专项宣讲会（8月13日）','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260810_7350334.html')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>天津市科技局：2026年科技重大专项和重点领域重点研发计划申报指南</h3>
-<div class="meta">
-<span>天津市科技局</span>
-<span class="deadline">⏰ 9月9日申报截止</span>
+<span class="policy-tag tag-dept">市科技局</span>
+<div class="policy-title">关于组织申报智能电网国家科技重大专项基础支撑自主化关键技术项目的通知</div>
+<div class="policy-summary">国家能源局发布智能电网国家科技重大专项申报指南。<strong>申报截止至2026年9月13日16:00</strong>，市科技局负责本市项目的组织推荐。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 | ⏰ 截止 9月13日</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260812_7351299.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'天津市科技局｜智能电网国家科技重大专项项目申报｜截止9月13日')">📱 分享到微信</button>
 </div>
-<div class="desc">4大科技重大专项：人工智能（AI+信创、智能机器人、AI+应用场景）、生物医药（药物、医疗器械、AI+生物医药、临床试验能力提升）、未来产业（合成生物学、脑机接口、深地海洋等10个专题）、社会发展（环境综合治理、城市安全、绿色低碳、智慧农业）。3个重点研发计划：空天科技、生物医药、社会事业与现代农业。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260807_7349355.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市科技局：2026年科技重大专项和重点研发计划申报指南（9月9日截止）','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202608/t20260807_7349355.html')">📤 分享到微信</button>
-</div>
-</div>
-
-<div class="policy-card">
-<h3>天津市科技局：2026年度京津冀协同创新项目申报 + 国际科技合作项目申报</h3>
-<div class="meta">
-<span>天津市科技局</span>
-<span class="deadline">⏰ 9月4日申报截止</span>
-</div>
-<div class="desc">京津冀协同创新项目重点领域包括：与北京市创新合作（机器人、AI+生物技术）、与河北省创新合作（新能源新材料、资源循环再生）、与雄安新区创新合作（卫星互联网、新一代信息技术）。国际科技合作项目实行"无纸化"在线申报。项目申报时间：8月4日9:00至9月4日17:00。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://www.tiangong.edu.cn/2026/0810/c8679a116748/page.htm" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市：京津冀协同创新项目申报+国际科技合作项目申报（9月4日截止）','https://www.tiangong.edu.cn/2026/0810/c8679a116748/page.htm')">📤 分享到微信</button>
 </div>
 </div>
 
 <div class="policy-card">
-<h3>天津市工信局：卓越级/领航级智能工厂遴选推荐</h3>
-<div class="meta">
-<span>天津市工信局</span>
-<span class="deadline">⏰ 8月15日线上申报截止 / 8月17日区级推荐截止</span>
+<span class="policy-tag tag-dept">市知识产权局等四部门</span>
+<div class="policy-title">《天津市专利公开实施办法(试行)》印发</div>
+<div class="policy-summary">市知识产权局、市教委、市科技局、市卫生健康委联合制定。规范专利公开实施行为，加快高价值专利转化运用。利用财政性资金形成的专利，<strong>自授权公告之日起满五年无正当理由未实施的</strong>，应纳入公开实施清单。支持转让、许可（含开放许可）、作价入股等方式。</div>
+<div class="policy-meta">
+<span class="date">📅 2026-08-12 发布</span>
+<div class="policy-actions">
+<a class="btn btn-primary" href="https://zscq.tj.gov.cn/zwxx/tzgg/202608/t20260812_7351765.html" target="_blank">📄 查看原文</a>
+<button class="btn btn-wechat" onclick="sharePolicy(this,'天津市四部门印发《专利公开实施办法(试行)》｜财政资助专利满5年未实施须纳入公开清单')">📱 分享到微信</button>
 </div>
-<div class="desc">与河北省同步执行智能工厂梯度培育行动。卓越级须AI场景应用比例≥30%，领航级≥60%。8月15日前完成线上申报，8月17日前各区完成推荐。</div>
-<div class="actions">
-<a class="btn btn-primary" href="https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202608/t20260810_7349880.html" target="_blank">📄 查看原文</a>
-<button class="btn btn-share" onclick="sharePolicy('天津市工信局：卓越级/领航级智能工厂遴选（8月15日截止）','https://gyxxh.tj.gov.cn/ZWGK4147/ZCWJ6355/wjwj/202608/t20260810_7349880.html')">📤 分享到微信</button>
 </div>
+</div>
+
 </div>
 
 </div>
 
-<!-- 重点业务提示 -->
-<div class="tips-box">
-<h2>💼 重点业务提示</h2>
-<ul>
-<li><span class="level">🔴</span>燕赵电力实验室联合基金预申报8月14日截止（仅剩2天），有电力领域高校/科研院所客户请立即跟进</li>
-<li><span class="level">🔴</span>智能工厂卓越级/领航级8月15日截止（河北省+天津市同步，仅剩3天），排查有AI应用场景的制造企业</li>
-<li><span class="level">🔴</span>河北省高企第二批+科技型中小企业8月25日截止，立即排查客户申报进度</li>
-<li><span class="level">🟡</span>雄安高价值专利大赛8月18日报名截止，排查有发明专利的科创客户</li>
-<li><span class="level">🟡</span>天津科技重大专项9月9日截止（涵盖AI、生物医药、未来产业），排查天津有研发实力的客户</li>
-<li><span class="level">🟡</span>天津低碳科技专项宣讲会明日召开，有低碳领域客户可通知参会</li>
-<li><span class="level">🟢</span>天津智能机器人三年行动方案发布（核心产值200亿+），排查机器人领域客户</li>
-<li><span class="level">🟢</span>雄安AI实训基地投运+"一院一园一平台一基地"格局成型，关注AI人才培训需求</li>
-<li><span class="level">🟢</span>邢台28个项目入选省核心技术攻关名单，临西人形机器人轴承突破，排查相关客户</li>
-<li><span class="level">🟢</span>邯郸创新创业大赛复赛收官，25支决赛队伍+41支省级队伍，关注赛后对接</li>
-</ul>
+<!-- 微信分享弹窗 -->
+<div class="modal-overlay" id="shareModal">
+<div class="modal-box">
+<button class="close-btn" onclick="closeShareModal()">&times;</button>
+<h4>📱 分享到微信</h4>
+<p>复制下方内容，打开微信发送给好友或朋友圈</p>
+<div class="share-text" id="shareText"></div>
+<button class="copy-btn" onclick="copyShare()">📋 一键复制</button>
+<div class="copy-ok" id="copyOk">✅ 已复制到剪贴板</div>
+</div>
 </div>
 
 <div class="footer">
-<p>一站式科技政策日报 · 每日自动更新</p>
-<p>数据来源：河北省/雄安新区/邢台市/邯郸市/沧州市/天津市 科技/工信/发改部门官网</p>
-<p>Powered by <a href="https://zhengwei6983.github.io/daily-report/">科创一站式</a></p>
+<p>📋 一站式科技政策日报 · 自动整理生成</p>
+<p>覆盖地区：河北省 · 雄安新区 · 邢台市 · 邯郸市 · 沧州市 · 天津市</p>
+<p>数据来源：各级政府官网、权威媒体公开报道</p>
+<p style="margin-top:8px;color:#9ca3af">生成时间：2026-08-13 06:55 | <a href="https://zhengwei6983.github.io/daily-report/">在线查看</a></p>
 </div>
-
-</div>
-
-<div class="toast" id="toast"></div>
 
 <script>
-function sharePolicy(title, url) {
-  var shareText = '【科技政策日报】' + title + '\n' + url;
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(shareText).then(function() {
-      showToast('已复制分享链接，请粘贴到微信发送');
-    }).catch(function() {
-      fallbackCopy(shareText);
+function sharePolicy(btn, text) {
+  var modal = document.getElementById('shareModal');
+  var shareTextEl = document.getElementById('shareText');
+  var dateStr = '【科技政策日报·2026年8月13日】\n';
+  shareTextEl.textContent = dateStr + text + '\n🔗 在线查看：https://zhengwei6983.github.io/daily-report/';
+  modal.classList.add('active');
+  document.getElementById('copyOk').style.display = 'none';
+}
+function closeShareModal() {
+  document.getElementById('shareModal').classList.remove('active');
+}
+function copyShare() {
+  var text = document.getElementById('shareText').textContent;
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(function() {
+      document.getElementById('copyOk').style.display = 'block';
     });
   } else {
-    fallbackCopy(shareText);
-  }
-}
-function fallbackCopy(text) {
-  var ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.position = 'fixed';
-  ta.style.left = '-9999px';
-  document.body.appendChild(ta);
-  ta.select();
-  try {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
     document.execCommand('copy');
-    showToast('已复制分享链接，请粘贴到微信发送');
-  } catch(e) {
-    showToast('请手动复制链接分享');
+    document.body.removeChild(ta);
+    document.getElementById('copyOk').style.display = 'block';
   }
-  document.body.removeChild(ta);
 }
-function showToast(msg) {
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.style.display = 'block';
-  setTimeout(function() { t.style.display = 'none'; }, 2500);
-}
+document.getElementById('shareModal').addEventListener('click', function(e) {
+  if (e.target === this) closeShareModal();
+});
 </script>
+
 </body>
 </html>
