@@ -3,221 +3,443 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>一站式科技政策日报 - 2026年9月17日</title>
+<title>一站式科技政策日报 - 2026年09月18日</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
-.header { background: linear-gradient(135deg, #1a73e8, #0d47a1); color: #fff; padding: 28px 20px 20px; text-align: center; }
-.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
-.header .date { font-size: 14px; opacity: 0.9; }
-.header .subtitle { font-size: 12px; opacity: 0.7; margin-top: 4px; }
-.stats { display: flex; justify-content: center; gap: 16px; margin-top: 14px; flex-wrap: wrap; }
-.stats span { background: rgba(255,255,255,0.18); padding: 3px 10px; border-radius: 12px; font-size: 12px; }
-.region-section { margin: 16px 12px; }
-.region-title { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 10px; font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 10px; }
-.region-title .badge { background: rgba(255,255,255,0.25); padding: 2px 8px; border-radius: 10px; font-size: 12px; font-weight: 400; }
-.hebei { background: linear-gradient(135deg, #e53935, #c62828); }
-.xiongan { background: linear-gradient(135deg, #8e24aa, #6a1b9a); }
-.xingtai { background: linear-gradient(135deg, #43a047, #2e7d32); }
-.handan { background: linear-gradient(135deg, #fb8c00, #e65100); }
-.cangzhou { background: linear-gradient(135deg, #00acc1, #00838f); }
-.tianjin { background: linear-gradient(135deg, #3949ab, #283593); }
-.card { background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); transition: box-shadow 0.2s; }
-.card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.1); }
-.card .card-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; line-height: 1.5; }
-.card .card-summary { font-size: 13px; color: #555; line-height: 1.7; margin-bottom: 12px; }
-.card .card-meta { font-size: 12px; color: #999; margin-bottom: 10px; }
-.card .actions { display: flex; gap: 8px; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 500; text-decoration: none; border: none; cursor: pointer; transition: all 0.2s; }
-.btn-source { background: #e8f0fe; color: #1a73e8; }
-.btn-source:hover { background: #d2e3fc; }
-.btn-share { background: #e8f5e9; color: #2e7d32; }
-.btn-share:hover { background: #c8e6c9; }
-.empty-card { background: #fff; border-radius: 10px; padding: 20px 16px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center; color: #999; font-size: 13px; }
-.footer { text-align: center; padding: 20px; color: #999; font-size: 12px; }
-.toast { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.75); color: #fff; padding: 14px 28px; border-radius: 10px; font-size: 14px; z-index: 9999; display: none; white-space: pre-line; text-align: center; }
-.toast.show { display: block; animation: fadeInOut 2.5s ease; }
-@keyframes fadeInOut { 0%{opacity:0;transform:translate(-50%,-50%) scale(0.8)} 15%{opacity:1;transform:translate(-50%,-50%) scale(1)} 85%{opacity:1} 100%{opacity:0} }
+.header { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: #fff; padding: 32px 20px; text-align: center; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%); animation: pulse 4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+.header h1 { font-size: 28px; font-weight: 700; position: relative; z-index: 1; }
+.header .date { font-size: 16px; margin-top: 8px; opacity: 0.9; position: relative; z-index: 1; }
+.header .subtitle { font-size: 13px; margin-top: 4px; opacity: 0.7; position: relative; z-index: 1; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px 16px 40px; }
+.stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; justify-content: center; }
+.stat-item { background: #fff; border-radius: 12px; padding: 12px 18px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.06); min-width: 100px; }
+.stat-num { font-size: 24px; font-weight: 700; color: #1a73e8; }
+.stat-label { font-size: 12px; color: #888; margin-top: 2px; }
+.region-section { margin-bottom: 24px; }
+.region-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; padding: 12px 16px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.region-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #fff; flex-shrink: 0; }
+.region-name { font-size: 17px; font-weight: 600; color: #333; }
+.region-count { font-size: 12px; color: #888; margin-left: auto; background: #f0f2f5; padding: 2px 10px; border-radius: 10px; }
+.policy-card { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); transition: all 0.2s ease; border-left: 3px solid transparent; }
+.policy-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); transform: translateY(-1px); }
+.policy-tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; font-weight: 500; }
+.tag-notice { background: #e8f0fe; color: #1a73e8; }
+.tag-policy { background: #fce8e6; color: #d93025; }
+.tag-news { background: #e6f4ea; color: #137333; }
+.tag-event { background: #fef7e0; color: #b06000; }
+.policy-title { font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; line-height: 1.5; }
+.policy-meta { display: flex; align-items: center; gap: 12px; font-size: 12px; color: #999; margin-bottom: 10px; }
+.policy-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 14px; border-radius: 20px; font-size: 12px; border: none; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+.btn-primary { background: #1a73e8; color: #fff; }
+.btn-primary:hover { background: #1557b0; }
+.btn-wechat { background: #07c160; color: #fff; }
+.btn-wechat:hover { background: #06ad56; }
+.btn-outline { background: transparent; color: #666; border: 1px solid #ddd; }
+.btn-outline:hover { background: #f5f5f5; }
+.empty-note { text-align: center; padding: 30px 20px; color: #999; font-size: 14px; background: #fff; border-radius: 12px; }
+.footer { text-align: center; padding: 20px; color: #999; font-size: 12px; border-top: 1px solid #eee; margin-top: 20px; }
+.footer a { color: #1a73e8; text-decoration: none; }
+.c-hebei { background: #d32f2f; }
+.region-hebei .policy-card { border-left-color: #d32f2f; }
+.c-xiongan { background: #7b1fa2; }
+.region-xiongan .policy-card { border-left-color: #7b1fa2; }
+.c-xingtai { background: #f57c00; }
+.region-xingtai .policy-card { border-left-color: #f57c00; }
+.c-handan { background: #1565c0; }
+.region-handan .policy-card { border-left-color: #1565c0; }
+.c-cangzhou { background: #2e7d32; }
+.region-cangzhou .policy-card { border-left-color: #2e7d32; }
+.c-tianjin { background: #00838f; }
+.region-tianjin .policy-card { border-left-color: #00838f; }
+.modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center; }
+.modal-overlay.active { display: flex; }
+.modal-box { background: #fff; border-radius: 16px; padding: 30px; max-width: 360px; width: 90%; text-align: center; }
+.modal-box h3 { font-size: 18px; margin-bottom: 12px; }
+.modal-box p { font-size: 14px; color: #666; margin-bottom: 16px; }
+.qr-placeholder { width: 200px; height: 200px; background: #f5f5f5; border-radius: 12px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #999; border: 2px dashed #ddd; }
+.modal-close { background: #1a73e8; color: #fff; border: none; padding: 10px 30px; border-radius: 20px; font-size: 14px; cursor: pointer; }
+.toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px); background: #333; color: #fff; padding: 12px 24px; border-radius: 24px; font-size: 14px; z-index: 2000; transition: transform 0.3s ease; }
+.toast.show { transform: translateX(-50%) translateY(0); }
+@media (max-width: 480px) {
+  .header h1 { font-size: 22px; }
+  .stat-item { min-width: 80px; padding: 10px 12px; }
+  .stat-num { font-size: 20px; }
+  .policy-title { font-size: 14px; }
+}
 </style>
 </head>
 <body>
 
 <div class="header">
   <h1>📋 一站式科技政策日报</h1>
-  <div class="date">2026年9月17日 星期四</div>
+  <div class="date">2026年09月18日 星期四</div>
   <div class="subtitle">覆盖河北 · 雄安 · 邢台 · 邯郸 · 沧州 · 天津</div>
-  <div class="stats">
-    <span>河北 5条</span>
-    <span>雄安 3条</span>
-    <span>邢台 0条</span>
-    <span>邯郸 0条</span>
-    <span>沧州 0条</span>
-    <span>天津 3条</span>
-    <span>共11条</span>
-  </div>
+</div>
+
+<div class="container">
+
+<div class="stats">
+  <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">河北省</div></div>
+  <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">雄安新区</div></div>
+  <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">天津市</div></div>
+  <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">邯郸市</div></div>
+  <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">邢台市</div></div>
+  <div class="stat-item"><div class="stat-num">1</div><div class="stat-label">沧州市</div></div>
 </div>
 
 <!-- 河北省 -->
-<div class="region-section">
-  <div class="region-title hebei">🔴 河北省 <span class="badge">5条</span></div>
+<div class="region-section region-hebei">
+  <div class="region-header">
+    <div class="region-icon c-hebei">冀</div>
+    <div class="region-name">河北省</div>
+    <div class="region-count">5 条政策</div>
+  </div>
 
-  <div class="card">
-    <div class="card-title">关于公布2026年度河北省自然科学基金燕赵实验室联合基金项目评审结果的通知</div>
-    <div class="card-meta">来源：河北省科学技术厅 | 2026-09-15</div>
-    <div class="card-summary">河北省科技厅公布2026年度省自然科学基金燕赵实验室联合基金项目评审结果，依托单位可登录河北省科技计划项目综合服务平台查询。公示异议期为9月15日至19日。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510380964676/index.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('关于公布2026年度河北省自然科学基金燕赵实验室联合基金项目评审结果的通知','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510380964676/index.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">关于公布2026年度河北省自然科学基金燕赵实验室联合基金项目评审结果的通知</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-15</span>
+      <span>📌 河北省科技厅</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510380964676/index.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('河北省科技厅：关于公布2026年度河北省自然科学基金燕赵实验室联合基金项目评审结果的通知','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510380964676/index.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">关于公布2026年度河北省自然科学基金项目（第三批）评审结果的通知</div>
-    <div class="card-meta">来源：河北省科学技术厅 | 2026-09-15</div>
-    <div class="card-summary">经专家评审、厅党组会议审定，拟资助高校联合基金青年科学基金项目(C类)103项、面上项目104项、重点项目62项和生态智慧矿山联合基金重点项目3项。公示异议期为9月15日至19日。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510032914026/index.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('关于公布2026年度河北省自然科学基金项目（第三批）评审结果的通知','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510032914026/index.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">关于公布2026年度河北省自然科学基金项目（第三批）评审结果的通知</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-15</span>
+      <span>📌 河北省科技厅</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510032914026/index.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('河北省科技厅：关于公布2026年度河北省自然科学基金项目（第三批）评审结果的通知','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091510032914026/index.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">河北布局首批13家场景创新试验场承接京津成果 搭建"练兵场" 场景促转化</div>
-    <div class="card-meta">来源：河北省科学技术厅 | 2026-09-15</div>
-    <div class="card-summary">省科技厅认定首批13家场景创新试验场，搭建"练兵场"承接京津科技成果，推动场景创新与产业转化深度融合，加速京津冀协同创新。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/ztzllb/hbsdrrbjjjjgjkjcxzxjs/sy/2026091509311943747/index.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('河北布局首批13家场景创新试验场承接京津成果','https://kjt.hebei.gov.cn/hebkjt/ztzllb/hbsdrrbjjjjgjkjcxzxjs/sy/2026091509311943747/index.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-news">科技动态</span>
+    <div class="policy-title">河北布局首批13家场景创新试验场承接京津成果 搭建"练兵场" 场景促转化</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-15</span>
+      <span>📌 河北省科技厅</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/ztzllb/hbsdrrbjjjjgjkjcxzxjs/sy/2026091509311943747/index.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('河北布局首批13家场景创新试验场承接京津成果','https://kjt.hebei.gov.cn/hebkjt/ztzllb/hbsdrrbjjjjgjkjcxzxjs/sy/2026091509311943747/index.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">关于2026年度京津冀自然科学基金合作专项拟立项项目的公示</div>
-    <div class="card-meta">来源：河北省科学技术厅 | 2026-09-14</div>
-    <div class="card-summary">河北省科技厅发布2026年度京津冀自然科学基金合作专项拟立项项目公示，推动京津冀三地在基础研究与应用基础研究领域的协同创新。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091414584931079/index.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('关于2026年度京津冀自然科学基金合作专项拟立项项目的公示','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091414584931079/index.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">关于2026年度京津冀自然科学基金合作专项拟立项项目的公示</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-14</span>
+      <span>📌 河北省科技厅</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091414584931079/index.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('关于2026年度京津冀自然科学基金合作专项拟立项项目的公示','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091414584931079/index.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">关于2026年第一批纳入"科技型中小企业信息库"企业名单的公告</div>
-    <div class="card-meta">来源：河北省科学技术厅 | 2026-09-10</div>
-    <div class="card-summary">河北省科技厅公布2026年第一批纳入"科技型中小企业信息库"企业名单，助力科技型中小企业发展壮大。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091011461314194/index.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('关于2026年第一批纳入科技型中小企业信息库企业名单的公告','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091011461314194/index.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">关于2026年第一批纳入"科技型中小企业信息库"企业名单的公告</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-10</span>
+      <span>📌 河北省科技厅</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091011461314194/index.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('关于2026年第一批纳入科技型中小企业信息库企业名单的公告','https://kjt.hebei.gov.cn/hebkjt/xwzx15/tzgg35/sttz15/2026091011461314194/index.html')">📤 分享到微信</button>
     </div>
   </div>
 </div>
 
 <!-- 雄安新区 -->
-<div class="region-section">
-  <div class="region-title xiongan">🟣 雄安新区 <span class="badge">3条</span></div>
+<div class="region-section region-xiongan">
+  <div class="region-header">
+    <div class="region-icon c-xiongan">雄</div>
+    <div class="region-name">雄安新区</div>
+    <div class="region-count">5 条政策</div>
+  </div>
 
-  <div class="card">
-    <div class="card-title">关于面向社会公开征集雄安新区"沙盒审批"试点应用场景的公告</div>
-    <div class="card-meta">来源：雄安新区管委会 | 2026-09-14</div>
-    <div class="card-summary">雄安新区面向社会公开征集"沙盒审批"试点应用场景，探索创新监管模式，优化营商环境，推动新技术、新产品、新业态在新区率先落地应用。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://www.xiongan.gov.cn/20260914/5caa4f7d773d4317a23072b65c698306/c.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('关于面向社会公开征集雄安新区沙盒审批试点应用场景的公告','https://www.xiongan.gov.cn/20260914/5caa4f7d773d4317a23072b65c698306/c.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-news">科技动态</span>
+    <div class="policy-title">探访雄安新区智慧城市科创中心</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-17</span>
+      <span>📌 雄安新区官网</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.xiongan.gov.cn/20260917/e4259751723e4c96b18dbbc110f9f3eb/c.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('探访雄安新区智慧城市科创中心','https://www.xiongan.gov.cn/20260917/e4259751723e4c96b18dbbc110f9f3eb/c.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">2026空天信息和卫星互联网创新发展大会将于雄安启幕</div>
-    <div class="card-meta">来源：中国雄安官网 | 2026-09-14</div>
-    <div class="card-summary">2026空天信息和卫星互联网创新发展大会将在雄安新区举办，聚焦空天信息产业发展前沿，推动卫星互联网技术创新与产业应用。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://www.xiongan.gov.cn/20260914/403ef191a6894a1b9fc1842df5572b5c/c.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('2026空天信息和卫星互联网创新发展大会将于雄安启幕','https://www.xiongan.gov.cn/20260914/403ef191a6894a1b9fc1842df5572b5c/c.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-event">活动动态</span>
+    <div class="policy-title">2026中新绿色发展论坛在雄安新区举行</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-16</span>
+      <span>📌 雄安新区官网</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.xiongan.gov.cn/20260916/9843d1dd54e841d497a07e8669f33dff/c.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('2026中新绿色发展论坛在雄安新区举行','https://www.xiongan.gov.cn/20260916/9843d1dd54e841d497a07e8669f33dff/c.html')">📤 分享到微信</button>
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">雄安新区数字科技产业供需对接会成功举办</div>
-    <div class="card-meta">来源：雄安新区管委会 | 2026-09-11</div>
-    <div class="card-summary">雄安新区举办数字科技产业供需对接会，搭建数字科技企业与需求方对接平台，推动数字科技成果在新区转化落地。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://www.xiongan.gov.cn/20260911/6bf841db6b814a32a7cf052ede7bd891/c.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('雄安新区数字科技产业供需对接会成功举办','https://www.xiongan.gov.cn/20260911/6bf841db6b814a32a7cf052ede7bd891/c.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">关于面向社会公开征集雄安新区"沙盒审批"试点应用场景的公告</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-14</span>
+      <span>📌 雄安新区官网</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.xiongan.gov.cn/20260914/5caa4f7d773d4317a23072b65c698306/c.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('关于面向社会公开征集雄安新区沙盒审批试点应用场景的公告','https://www.xiongan.gov.cn/20260914/5caa4f7d773d4317a23072b65c698306/c.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-event">活动动态</span>
+    <div class="policy-title">雄安新区数字科技产业供需对接会成功举办</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-11</span>
+      <span>📌 雄安新区官网</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.xiongan.gov.cn/20260911/6bf841db6b814a32a7cf052ede7bd891/c.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('雄安新区数字科技产业供需对接会成功举办','https://www.xiongan.gov.cn/20260911/6bf841db6b814a32a7cf052ede7bd891/c.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-news">科技动态</span>
+    <div class="policy-title">雄安新区首笔数据资产质押贷款登记业务成功落地</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-08</span>
+      <span>📌 雄安新区官网</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.xiongan.gov.cn/20260908/fae8ef76786a4ef9ae9cd083bdde83b3/c.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('雄安新区首笔数据资产质押贷款登记业务成功落地','https://www.xiongan.gov.cn/20260908/fae8ef76786a4ef9ae9cd083bdde83b3/c.html')">📤 分享到微信</button>
+    </div>
+  </div>
+</div>
+
+<!-- 天津市 -->
+<div class="region-section region-tianjin">
+  <div class="region-header">
+    <div class="region-icon c-tianjin">津</div>
+    <div class="region-name">天津市</div>
+    <div class="region-count">5 条政策</div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">征求意见</span>
+    <div class="policy-title">市科技局关于对《关于企业研究开发费用税前加计扣除项目鉴定有关问题的通知（征求意见稿）》公开征求意见的通知</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-09</span>
+      <span>📌 天津市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260909_7369710.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('天津市科技局关于企业研发费用税前加计扣除项目鉴定有关问题征求意见','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260909_7369710.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">市科技局关于2026年度京津冀自然科学基金合作专项拟立项项目的公示</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-11</span>
+      <span>📌 天津市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260911_7372219.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('天津市科技局关于2026年度京津冀自然科学基金合作专项拟立项项目的公示','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260911_7372219.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-policy">政策文件</span>
+    <div class="policy-title">市科技局关于印发《天津市科技型企业孵化器管理办法》的通知</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-08</span>
+      <span>📌 天津市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/managecol/ZCWJ0923/kjjzcwj09233/202609/t20260908_7369056.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('天津市科技局关于印发《天津市科技型企业孵化器管理办法》的通知','https://kxjs.tj.gov.cn/managecol/ZCWJ0923/kjjzcwj09233/202609/t20260908_7369056.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">市高企认定办关于天津市2026年第二批高新技术企业拟更名公示</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-03</span>
+      <span>📌 天津市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260903_7366322.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('天津市2026年第二批高新技术企业拟更名公示','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260903_7366322.html')">📤 分享到微信</button>
+    </div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-notice">通知公告</span>
+    <div class="policy-title">天津市2026年第三批入库科技型中小企业名单公告</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-02</span>
+      <span>📌 天津市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260902_7365149.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('天津市2026年第三批入库科技型中小企业名单公告','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260902_7365149.html')">📤 分享到微信</button>
+    </div>
+  </div>
+</div>
+
+<!-- 邯郸市 -->
+<div class="region-section region-handan">
+  <div class="region-header">
+    <div class="region-icon c-handan">邯</div>
+    <div class="region-name">邯郸市</div>
+    <div class="region-count">1 条政策</div>
+  </div>
+
+  <div class="policy-card">
+    <span class="policy-tag tag-event">活动动态</span>
+    <div class="policy-title">第九届邯郸市创新创业大赛决赛成功举办</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-16</span>
+      <span>📌 邯郸市科技局</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.hd.gov.cn/hdyw/bmdt/bm/kjj/202609/t20260916_2217340.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('第九届邯郸市创新创业大赛决赛成功举办','https://www.hd.gov.cn/hdyw/bmdt/bm/kjj/202609/t20260916_2217340.html')">📤 分享到微信</button>
     </div>
   </div>
 </div>
 
 <!-- 邢台市 -->
-<div class="region-section">
-  <div class="region-title xingtai">🟢 邢台市 <span class="badge">0条</span></div>
-  <div class="empty-card">📭 近期暂无新发布的科技政策（邢台市政府网站暂未开放访问）</div>
-</div>
+<div class="region-section region-xingtai">
+  <div class="region-header">
+    <div class="region-icon c-xingtai">邢</div>
+    <div class="region-name">邢台市</div>
+    <div class="region-count">1 条政策</div>
+  </div>
 
-<!-- 邯郸市 -->
-<div class="region-section">
-  <div class="region-title handan">🟠 邯郸市 <span class="badge">0条</span></div>
-  <div class="empty-card">📭 近期暂无新发布的科技政策（邯郸市科技局网站暂未开放访问）</div>
+  <div class="policy-card">
+    <span class="policy-tag tag-news">科技动态</span>
+    <div class="policy-title">杨猛在市高新区襄都区调研OPC行业发展情况——以OPC赋能县域特色产业集群</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-17</span>
+      <span>📌 邢台市人民政府</span>
+    </div>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://xingtai.gov.cn/ywdt/jrxt/xtyw/202609/t20260917_735699.html" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('邢台市调研OPC行业发展 以OPC赋能县域特色产业集群','https://xingtai.gov.cn/ywdt/jrxt/xtyw/202609/t20260917_735699.html')">📤 分享到微信</button>
+    </div>
+  </div>
 </div>
 
 <!-- 沧州市 -->
-<div class="region-section">
-  <div class="region-title cangzhou">🔵 沧州市 <span class="badge">0条</span></div>
-  <div class="empty-card">📭 近期暂无新发布的科技政策</div>
-</div>
-
-<!-- 天津市 -->
-<div class="region-section">
-  <div class="region-title tianjin">🔷 天津市 <span class="badge">3条</span></div>
-
-  <div class="card">
-    <div class="card-title">市科技局关于2026年度京津冀自然科学基金合作专项拟立项项目的公示</div>
-    <div class="card-meta">来源：天津市科学技术局 | 2026-09-11</div>
-    <div class="card-summary">天津市科技局发布2026年度京津冀自然科学基金合作专项拟立项项目公示，推动京津冀三地基础研究协同创新。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260911_7372219.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('天津市科技局关于2026年度京津冀自然科学基金合作专项拟立项项目的公示','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260911_7372219.html')">📱 分享到微信</button>
-    </div>
+<div class="region-section region-cangzhou">
+  <div class="region-header">
+    <div class="region-icon c-cangzhou">沧</div>
+    <div class="region-name">沧州市</div>
+    <div class="region-count">1 条政策</div>
   </div>
 
-  <div class="card">
-    <div class="card-title">市科技局关于对《关于企业研究开发费用税前加计扣除项目鉴定有关问题的通知（征求意见稿）》公开征求意见</div>
-    <div class="card-meta">来源：天津市科学技术局 | 2026-09-09</div>
-    <div class="card-summary">天津市科技局就企业研发费用税前加计扣除项目鉴定有关问题公开征求意见，进一步完善研发费用加计扣除政策执行细则。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260909_7369710.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('天津市科技局关于企业研发费用税前加计扣除项目鉴定有关问题征求意见','https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202609/t20260909_7369710.html')">📱 分享到微信</button>
+  <div class="policy-card">
+    <span class="policy-tag tag-policy">政策文件</span>
+    <div class="policy-title">沧州市人民政府办公室关于印发《沧州市加氢站管理办法（试行）》的通知</div>
+    <div class="policy-meta">
+      <span>📅 2026-09-01</span>
+      <span>📌 沧州市人民政府</span>
     </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title">市科技局关于印发《天津市科技型企业孵化器管理办法》的通知</div>
-    <div class="card-meta">来源：天津市科学技术局 | 2026-09-08</div>
-    <div class="card-summary">天津市科技局印发新版《天津市科技型企业孵化器管理办法》，规范科技企业孵化器管理，提升孵化服务质量，促进科技型企业发展壮大。</div>
-    <div class="actions">
-      <a class="btn btn-source" href="https://kxjs.tj.gov.cn/managecol/ZCWJ0923/kjjzcwj09233/202609/t20260908_7369056.html" target="_blank">📄 查看原文</a>
-      <button class="btn btn-share" onclick="shareToWeChat('天津市科技局关于印发天津市科技型企业孵化器管理办法的通知','https://kxjs.tj.gov.cn/managecol/ZCWJ0923/kjjzcwj09233/202609/t20260908_7369056.html')">📱 分享到微信</button>
+    <div class="policy-actions">
+      <a class="btn btn-primary" href="https://www.cangzhou.gov.cn/czsrmzfbgs/czbg/202609/fec976991b404c698d71399bd81b9dbf.shtml" target="_blank">🔗 查看原文</a>
+      <button class="btn btn-wechat" onclick="shareToWechat('沧州市加氢站管理办法（试行）','https://www.cangzhou.gov.cn/czsrmzfbgs/czbg/202609/fec976991b404c698d71399bd81b9dbf.shtml')">📤 分享到微信</button>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  一站式科技政策日报 · 每日自动更新 · 数据来源：各地科技厅/局官网<br>
-  更新时间：2026年9月17日 07:00
+  <p>数据来源：河北省科技厅 · 雄安新区官网 · 天津市科技局 · 邯郸市/邢台市/沧州市人民政府</p>
+  <p style="margin-top:6px;">由 <strong>一站式科技</strong> 自动整理生成 · 每日更新</p>
 </div>
 
-<div class="toast" id="toast"></div>
+</div>
+
+<!-- Share Modal -->
+<div class="modal-overlay" id="shareModal">
+  <div class="modal-box">
+    <h3>📤 分享到微信</h3>
+    <p id="shareTitle">政策标题</p>
+    <div class="qr-placeholder">请复制链接后在微信中打开</div>
+    <p style="font-size:12px;color:#999;margin-bottom:16px;" id="shareUrl">URL</p>
+    <button class="btn btn-primary" onclick="copyLink()" style="margin-bottom:10px;width:100%;justify-content:center;">📋 复制链接</button>
+    <button class="modal-close" onclick="closeModal()">关闭</button>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">已复制到剪贴板</div>
 
 <script>
-function shareToWeChat(title, url) {
-  var shareUrl = 'https://zhengwei6983.github.io/daily-report/';
-  var toastEl = document.getElementById('toast');
-  toastEl.textContent = '📱 分享到微信\n\n请长按复制链接分享给好友\n或截图发送到微信群\n\n' + title;
-  toastEl.className = 'toast show';
-  setTimeout(function(){ toastEl.className = 'toast'; }, 2500);
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(shareUrl).catch(function(){});
+let currentUrl = '';
+
+function shareToWechat(title, url) {
+  currentUrl = url;
+  document.getElementById('shareTitle').textContent = title;
+  document.getElementById('shareUrl').textContent = url;
+  document.getElementById('shareModal').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('shareModal').classList.remove('active');
+}
+
+function copyLink() {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(currentUrl).then(() => showToast('链接已复制，可粘贴到微信分享'));
+  } else {
+    const ta = document.createElement('textarea');
+    ta.value = currentUrl;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('链接已复制，可粘贴到微信分享');
   }
 }
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+document.getElementById('shareModal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
 </script>
+
 </body>
 </html>
