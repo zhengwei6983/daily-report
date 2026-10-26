@@ -1,411 +1,658 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>一站式科技政策日报 - 2026年10月26日</title>
-<style>
-:root {
-  --primary: #1a73e8;
-  --primary-light: #e8f0fe;
-  --hebei: #d32f2f;
-  --xiongan: #f57c00;
-  --xingtai: #388e3c;
-  --handan: #7b1fa2;
-  --cangzhou: #00796b;
-  --tianjin: #1565c0;
-  --bg: #f5f7fa;
-  --card-bg: #ffffff;
-  --text: #333333;
-  --text-light: #666666;
-  --border: #e0e0e0;
-  --shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-}
-.header {
-  background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
-  color: white;
-  padding: 32px 20px;
-  text-align: center;
-}
-.header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
-.header .date { font-size: 16px; opacity: 0.9; }
-.header .subtitle { font-size: 13px; opacity: 0.7; margin-top: 4px; }
-.container { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
-.region-section { margin-bottom: 28px; }
-.region-header {
-  display: flex;
-  align-items: center;
-  padding: 12px 16px;
-  border-radius: 10px 10px 0 0;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-}
-.region-header .icon { margin-right: 10px; font-size: 22px; }
-.region-header.hebei { background: var(--hebei); }
-.region-header.xiongan { background: var(--xiongan); }
-.region-header.xingtai { background: var(--xingtai); }
-.region-header.handan { background: var(--handan); }
-.region-header.cangzhou { background: var(--cangzhou); }
-.region-header.tianjin { background: var(--tianjin); }
-.policy-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-top: none;
-  padding: 16px;
-  transition: box-shadow 0.2s;
-}
-.policy-card:last-child { border-radius: 0 0 10px 10px; }
-.policy-card:hover { box-shadow: var(--shadow); }
-.policy-title { font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.5; }
-.policy-summary { font-size: 14px; color: var(--text-light); margin-bottom: 12px; line-height: 1.7; }
-.policy-actions { display: flex; gap: 10px; flex-wrap: wrap; }
-.btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s;
-}
-.btn-original {
-  background: var(--primary-light);
-  color: var(--primary);
-}
-.btn-original:hover { background: var(--primary); color: white; }
-.btn-share {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-.btn-share:hover { background: #2e7d32; color: white; }
-.btn svg { width: 14px; height: 14px; margin-right: 4px; fill: currentColor; }
-.footer {
-  text-align: center;
-  padding: 24px 16px;
-  color: var(--text-light);
-  font-size: 12px;
-  border-top: 1px solid var(--border);
-  margin-top: 20px;
-}
-.toast {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.8);
-  color: white;
-  padding: 16px 24px;
-  border-radius: 8px;
-  font-size: 14px;
-  z-index: 9999;
-  display: none;
-  text-align: center;
-  max-width: 300px;
-}
-.toast.show { display: block; animation: fadeIn 0.3s; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-.summary-bar {
-  background: white;
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow);
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.summary-item { text-align: center; }
-.summary-item .num { font-size: 24px; font-weight: 700; color: var(--primary); }
-.summary-item .label { font-size: 12px; color: var(--text-light); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一站式科技政策日报 - 2026年10月27日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            color: #fff;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        .header .date {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .header .subtitle {
+            font-size: 0.9em;
+            opacity: 0.75;
+            margin-top: 6px;
+        }
+        .region-section {
+            background: #fff;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .region-header {
+            padding: 16px 24px;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .region-header .badge {
+            background: rgba(255,255,255,0.25);
+            border-radius: 20px;
+            padding: 2px 12px;
+            font-size: 0.8em;
+        }
+        .region-hebei .region-header { background: linear-gradient(135deg, #e53e3e, #c53030); }
+        .region-xiongan .region-header { background: linear-gradient(135deg, #d69e2e, #b7791f); }
+        .region-xingtai .region-header { background: linear-gradient(135deg, #38a169, #276749); }
+        .region-handan .region-header { background: linear-gradient(135deg, #3182ce, #2c5282); }
+        .region-cangzhou .region-header { background: linear-gradient(135deg, #805ad5, #6b46a1); }
+        .region-tianjin .region-header { background: linear-gradient(135deg, #dd6b20, #c05621); }
+
+        .policy-list {
+            padding: 8px 0;
+        }
+        .policy-item {
+            padding: 16px 24px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s;
+        }
+        .policy-item:last-child { border-bottom: none; }
+        .policy-item:hover { background: #f7fafc; }
+        .policy-title {
+            font-size: 1em;
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+        .policy-summary {
+            font-size: 0.9em;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .policy-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.82em;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        .btn-source {
+            background: #ebf4ff;
+            color: #3182ce;
+        }
+        .btn-source:hover { background: #bee3f8; }
+        .btn-share {
+            background: #f0fff4;
+            color: #38a169;
+        }
+        .btn-share:hover { background: #c6f6d5; }
+        .btn svg {
+            width: 14px;
+            height: 14px;
+            fill: currentColor;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.85em;
+        }
+        .footer a { color: #fff; text-decoration: underline; }
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #333;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 9999;
+        }
+        .toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-overlay.active { display: flex; }
+        .modal-box {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+        }
+        .modal-box h3 {
+            margin-bottom: 16px;
+            color: #2d3748;
+        }
+        .modal-box .qr-placeholder {
+            background: #f7fafc;
+            border: 2px dashed #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .modal-box .qr-placeholder p {
+            color: #718096;
+            font-size: 0.85em;
+            margin-top: 8px;
+        }
+        .modal-box .share-link {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 0.8em;
+            color: #4a5568;
+            word-break: break-all;
+            margin-bottom: 16px;
+        }
+        .modal-box .btn-close {
+            background: #edf2f7;
+            color: #4a5568;
+            padding: 8px 24px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .modal-box .btn-close:hover { background: #e2e8f0; }
+        .modal-box .btn-copy {
+            background: #3182ce;
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        .modal-box .btn-copy:hover { background: #2c5282; }
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        .stat-item {
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 0.85em;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 一站式科技政策日报</h1>
+            <div class="date">2026年10月27日 星期二</div>
+            <div class="subtitle">覆盖河北 · 雄安 · 邢台 · 邯郸 · 沧州 · 天津</div>
+            <div class="stats-bar">
+                <span class="stat-item">河北 5条</span>
+                <span class="stat-item">雄安 3条</span>
+                <span class="stat-item">邢台 2条</span>
+                <span class="stat-item">邯郸 3条</span>
+                <span class="stat-item">沧州 2条</span>
+                <span class="stat-item">天津 5条</span>
+                <span class="stat-item">共 20条</span>
+            </div>
+        </div>
 
-<div class="header">
-  <h1>📊 一站式科技政策日报</h1>
-  <div class="date">2026年10月26日 星期一</div>
-  <div class="subtitle">河北 · 雄安 · 邢台 · 邯郸 · 沧州 · 天津</div>
-</div>
+        <!-- 河北省 -->
+        <div class="region-section region-hebei">
+            <div class="region-header">
+                <span>🏛️ 河北省</span>
+                <span class="badge">5条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">河北推出"空天科创保""机智保""科创租赁保"三款科技保险新产品</div>
+                    <div class="policy-summary">河北推出三款科技保险产品，分别聚焦空天产业、机器人全场景和研发设备融资租赁需求。根据《河北省科技保险保费补贴办法(试行)》，保费最高补贴50%。各地科技管理部门将会同保险公司开展政策宣讲和产品推介。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://web.cmc.hebtv.com/cms/rmt0336/0/0rmhlm/qy/hbxwlb/lbhj/12567720.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('河北推出"空天科创保""机智保""科创租赁保"三款科技保险新产品（保费最高补贴50%）', 'https://web.cmc.hebtv.com/cms/rmt0336/0/0rmhlm/qy/hbxwlb/lbhj/12567720.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">全国首个省级支持OPC赋能产业集群发展政策文件发布</div>
+                    <div class="policy-summary">10月26日，第七届中国—中东欧国家(沧州)中小企业合作论坛上，河北省工信厅正式发布《河北省支持OPC赋能产业集群高质量发展工作举措》，采取"OPC+产业集群出海""OPC+智改数转网联""OPC+研发设计""OPC+人工智能"等八项举措，推动OPC生态建设与产业集群高质量发展双向赋能。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://m.chinanews.com/wap/detail/chs/zw/10721347.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('全国首个省级支持OPC赋能产业集群发展政策文件发布（八项举措推动OPC生态与产业集群双向赋能）', 'https://m.chinanews.com/wap/detail/chs/zw/10721347.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">河北开展第二批"产业集群数字化+金融"创新模式培育（55个产业集群）</div>
+                    <div class="policy-summary">省工信厅等五部门联合印发通知，在晋州纺纱织造等55个产业集群开展第二批"产业集群数字化+金融"创新模式培育，推动"数字化改造—数据采集授权—信贷办理—贷后监管"业务闭环，破解中小企业转型缺资金、融资难融资贵问题。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://shanghui.hebccw.cn/system/2026/10/26/102236673.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('河北开展第二批"产业集群数字化+金融"创新模式培育（55个产业集群）', 'https://shanghui.hebccw.cn/system/2026/10/26/102236673.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">河北2026年第三批8613家科技型中小企业拟入库公示</div>
+                    <div class="policy-summary">经企业自主评价和评价工作机构审核，河北省2026年第三批8613家拟入库科技型中小企业名单予以公示，公示期为2026年10月21日至11月3日（10个工作日）。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://kjt.hebei.gov.cn/hebkjt/index_ssl/index.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('河北2026年第三批8613家科技型中小企业拟入库公示（公示截止11月3日）', 'https://kjt.hebei.gov.cn/hebkjt/index_ssl/index.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">河北省将大力推动大型科学仪器共享</div>
+                    <div class="policy-summary">河北省近期将出台具体办法，推动单台(套)价值30万元及以上的大型科学仪器设施向社会开放共享。省财政将设立共享专项资金，用于用户使用补贴、设施运行维护等。同时建立新购仪器设施联合评议制度，邻近区域已有共享服务可满足需求的，原则上不予批准新购。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://m.lab168.com/news/show-36755.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('河北省将大力推动大型科学仪器共享（30万元以上仪器须开放，设专项资金补贴）', 'https://m.lab168.com/news/show-36755.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="container">
+        <!-- 雄安新区 -->
+        <div class="region-section region-xiongan">
+            <div class="region-header">
+                <span>🏗️ 雄安新区</span>
+                <span class="badge">3条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">雄安加速构建空天信息四大体系</div>
+                    <div class="policy-summary">雄安新区将空天信息和卫星互联网作为第一条产业链，加速构建"四大体系"：以中国星网为引领的供应链体系、以航天科技为引领的商业卫星智造产业链体系、以三大运营商为引领的大规模应用体系、以空天联盟为引领的标准制定和配套服务体系。统筹推进卫星产业链"311"工程，构建"2+10+N"基金管理体系（200亿元基金矩阵）。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026102109304397a5215e" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('雄安加速构建空天信息四大体系（卫星产业链"311"工程、200亿元基金矩阵）', 'https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026102109304397a5215e')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">雄安：硬核产业加速集聚，创新成果不断涌现</div>
+                    <div class="policy-summary">雄安新区以增材制造为重要抓手，重点布局金属材料、半导体材料、储能材料、纤维材料四大方向。王华明院士团队实现大型金属构件3D打印材料产业化"零"的突破，力争成为新区首家科创板本土上市主体。新区打造空天信息、人工智能、低空经济、服务贸易等30余栋主题楼宇，实施"雄才十六条"大力吸引全球顶尖人才。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://czt.hebei.gov.cn/xwdt/zhxw/202610/t20261026_2445551.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('雄安硬核产业加速集聚（新材料3D打印突破、30余栋主题楼宇、雄才十六条）', 'https://czt.hebei.gov.cn/xwdt/zhxw/202610/t20261026_2445551.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">雄安OPC社区持续扩容，中关村科技园汇聚291家科技企业</div>
+                    <div class="policy-summary">雄安中关村科技园已汇聚291家科技企业，OPC创新孵化社区持续扩容。新区构建"有组织的技术研发、人才培养、成果转化"一体布局，推进教育科技人才产业一体化发展，为创新创业团队提供坚实硬件支撑和全方位扶持政策。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://czt.hebei.gov.cn/xwdt/zhxw/202610/t20261026_2445551.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('雄安OPC社区持续扩容，中关村科技园汇聚291家科技企业', 'https://czt.hebei.gov.cn/xwdt/zhxw/202610/t20261026_2445551.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="summary-bar">
-  <div class="summary-item"><div class="num">5</div><div class="label">河北省</div></div>
-  <div class="summary-item"><div class="num">3</div><div class="label">雄安新区</div></div>
-  <div class="summary-item"><div class="num">2</div><div class="label">邢台市</div></div>
-  <div class="summary-item"><div class="num">3</div><div class="label">邯郸市</div></div>
-  <div class="summary-item"><div class="num">2</div><div class="label">沧州市</div></div>
-  <div class="summary-item"><div class="num">5</div><div class="label">天津市</div></div>
-</div>
+        <!-- 邢台市 -->
+        <div class="region-section region-xingtai">
+            <div class="region-header">
+                <span>🏭 邢台市</span>
+                <span class="badge">2条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">邢台技改赋能产业焕新</div>
+                    <div class="policy-summary">邢台引导金融机构创新推出"技改贷"等特色金融产品，为技改项目注入金融活水；组织行业专家上门问诊提供定制化技术指导；支持企业联合高校、科研院所攻坚产业基础材料与关键技术，推动年产值5亿元以上骨干企业、单项冠军企业、专精特新中小企业实施一批技改项目。持续深化"分类台账+包联帮扶+全流程服务"的项目全生命周期管理体系。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="http://he.xinhuanet.com/20261025/c6768ab2cd044345a8af29cadac35233/c.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('邢台技改赋能产业焕新（"技改贷"金融产品+全流程服务体系）', 'http://he.xinhuanet.com/20261025/c6768ab2cd044345a8af29cadac35233/c.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">邢台发放首笔"夸腾质量贷"</div>
+                    <div class="policy-summary">威县河北春岳环保科技有限公司获批中国银行邢台分行300万元质量贷款，这是全市首笔"夸腾质量贷"。该产品依托省"冀质贷"质量融资增信体系，将企业质量管理、创新能力、信用状况等质量要素纳入信贷评价体系，把质量"软实力"转化为融资"硬指标"，有效降低融资门槛与成本。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://www.163.com/dy/article/LA376U0R0514DPVJ.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('邢台发放首笔"夸腾质量贷"（质量软实力变融资硬指标，300万元落地）', 'https://www.163.com/dy/article/LA376U0R0514DPVJ.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<!-- 河北省 -->
-<div class="region-section">
-  <div class="region-header hebei"><span class="icon">🏛️</span>河北省</div>
+        <!-- 邯郸市 -->
+        <div class="region-section region-handan">
+            <div class="region-header">
+                <span>🏯 邯郸市</span>
+                <span class="badge">3条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">邯郸丛台区：OPC企业"15分钟拿证"，政务服务暖民心</div>
+                    <div class="policy-summary">丛台区在OPC社区、邯郸道布设营业执照自助打证终端，把登记服务端口前移至社区一线，实现企业申报、审核、打证、领证全流程在社区完成。截至目前已上门服务127次，持续优化区域营商环境，赋能个人创新创业。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://www.sohu.com/a/1092902943_267106" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('邯郸丛台区OPC企业"15分钟拿证"（自助打证终端进社区，上门服务127次）', 'https://www.sohu.com/a/1092902943_267106')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">邯郸丛台区开展OPC校园宣讲培训，赋能青年创新创业</div>
+                    <div class="policy-summary">丛台区兼庄乡联合区人社局深入邯郸市职教中心、河北工程大学管理工程与商学院，开展OPC创新创业大赛专题进校园宣讲培训活动。系统讲解OPC创新理念、项目创作逻辑、轻量化创业优势，详细解读大赛赛道设置、报名流程、扶持奖励政策，打通青年创意到项目孵化的成长链条。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="http://www.hdct.gov.cn/xwdt/jddt/202610/t20261026_2222263.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('邯郸丛台区OPC校园宣讲培训（走进高校，赋能青年创新创业）', 'http://www.hdct.gov.cn/xwdt/jddt/202610/t20261026_2222263.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">邯郸磁县：一个工位就能开公司，OPC审批窗口搬到创业者身边</div>
+                    <div class="policy-summary">磁县行政审批局针对单人创业者缺场地、缺经验、跑手续成本高等难题，把OPC审批窗口搬到创业者身边。依托一品一播基地和童装安防产业园设立2个政务服务前哨站，投放2台自助终端，推行工位注册和集群登记。首批156个工位已完成预先备案，创业者凭工位使用证明就能办理登记，"带一台电脑就能创业"成为现实。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://k.sina.cn/article_5952915705_162d248f906703rklu.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('邯郸磁县OPC审批改革：一个工位就能开公司（首批156个工位备案）', 'https://k.sina.cn/article_5952915705_162d248f906703rklu.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <div class="policy-card">
-    <div class="policy-title">河北推出"空天科创保""机智保""科创租赁保"三款科技保险新产品</div>
-    <div class="policy-summary">河北省科技厅指导中国太保产险河北分公司推出三款科技保险产品："空天科创保"聚焦空天产业（服务雄安卫星研发等企业），"机智保"覆盖具身机器人"产、销、租、用"全场景，"科创租赁保"为研发设备融资租赁提供保障。根据《河北省科技保险保费补贴办法（试行）》，保费最高补贴50%。创新积分越高，费率优惠越大。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://kjt.hebei.gov.cn/hebkjt/xwzx15/hbkjdt64/2026102309271096232/index.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('河北推出"空天科创保""机智保""科创租赁保"三款科技保险新产品，保费最高补贴50%','https://kjt.hebei.gov.cn/hebkjt/xwzx15/hbkjdt64/2026102309271096232/index.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
+        <!-- 沧州市 -->
+        <div class="region-section region-cangzhou">
+            <div class="region-header">
+                <span>🌊 沧州市</span>
+                <span class="badge">2条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">第七届中国—中东欧国家(沧州)中小企业合作论坛开幕</div>
+                    <div class="policy-summary">10月26日，第七届中国—中东欧国家(沧州)中小企业合作论坛在沧州开幕。会上发布全国首个省级支持OPC赋能产业集群发展政策文件，河北省工信厅提出八项举措推动OPC生态建设与产业集群高质量发展双向赋能、共生共赢。目前河北省共有107个重点产业集群，24个列入国家中小企业特色产业集群。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://m.chinanews.com/wap/detail/chs/zw/10721347.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('第七届中国—中东欧国家(沧州)中小企业合作论坛开幕（OPC赋能产业集群政策发布）', 'https://m.chinanews.com/wap/detail/chs/zw/10721347.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">沧州"建科积分保+贷款"首单业务落地 + 蓝色金融创新</div>
+                    <div class="policy-summary">"建科积分保+贷款"首单业务落地沧州，有效破解涉农科技企业轻资产、高风险的融资困境。同时，中国人民银行沧州市分行推动蓝色金融试点，指导沧州银行落地全省海盐化工领域首笔蓝色贷款1.19亿元，利率优惠50个基点，开辟"海洋生态保护+产业高质量发展+金融精准赋能"协同发展路径。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://www.financialnews.com.cn/2026-10/26/content_459512.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('沧州"建科积分保+贷款"首单落地 + 全省首笔海盐化工蓝色贷款1.19亿元', 'https://www.financialnews.com.cn/2026-10/26/content_459512.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 天津市 -->
+        <div class="region-section region-tianjin">
+            <div class="region-header">
+                <span>🌆 天津市</span>
+                <span class="badge">5条</span>
+            </div>
+            <div class="policy-list">
+                <div class="policy-item">
+                    <div class="policy-title">天津前三季度科创服务领域营收同比增四成</div>
+                    <div class="policy-summary">天津市科技局建立市区联动长效机制，服务专员带政策包下沉一线。前三季度科创服务领域营收同比增长超30%，生物医药CRO企业营收同比增长超五成。市科技局将持续实施"一院一策"精准服务，引导企业运用AI、大模型等前沿技术升级科创服务。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="http://news.enorth.com.cn/system/2026/10/27/059933206.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('天津前三季度科创服务领域营收同比增四成（"一院一策"精准服务）', 'http://news.enorth.com.cn/system/2026/10/27/059933206.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">天津抢抓扩围机遇，打造京津冀新质生产力创新协同区</div>
+                    <div class="policy-summary">天津强化与京冀协同创新和产业协作，在"117项目"及周边区域打造京津冀新质生产力创新协同区，确定算力、机器人、信创、生命健康等重点产业。滨海高新区梳理20多万平米载体，引入北京成果来津转化。围绕算力大世界、生命健康谷、脑机谷等特色主题园区建设，加速创新成果来津落地聚集。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="http://news.enorth.com.cn/system/2026/10/26/059932577.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('天津打造京津冀新质生产力创新协同区（算力大世界、生命健康谷、脑机谷）', 'http://news.enorth.com.cn/system/2026/10/26/059932577.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">天津2026年支持企业加强研发能力建设项目评审专家名单(第三批)公布</div>
+                    <div class="policy-summary">天津市科学技术局公布2026年支持企业加强研发能力建设项目评审专家名单(第三批)，按专家姓氏拼音排序共21位专家入选，涵盖生物医药、新材料、信息技术等领域。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202610/t20261026_7641495.html" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('天津2026年企业研发能力建设项目评审专家名单(第三批)公布', 'https://kxjs.tj.gov.cn/ZWGK4143/TZGG2079/202610/t20261026_7641495.html')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">天津科创服务业规模跃升、主体扩容、赛道向新</div>
+                    <div class="policy-summary">天津科创服务业呈现规模跃升态势，天诚新药评价等CRO企业前三季度营收同比增长超五成。企业积极布局海外业务，在韩国、日本、印尼搭建本土化测试团队。市科技局将围绕合成生物、智能网联汽车、新能源等优势方向，培育一体化服务平台，搭建全价值链服务体系。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="https://epaper.tianjinwe.com/tjrb/html/2026-10/27/content_143082_3955614.htm" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('天津科创服务业规模跃升、主体扩容、赛道向新（CRO企业营收增超五成）', 'https://epaper.tianjinwe.com/tjrb/html/2026-10/27/content_143082_3955614.htm')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-title">天津"人工智能+"激活产业新动能</div>
+                    <div class="policy-summary">天津深入实施"人工智能+"行动，科技型中小企业有望突破1.3万家。天开园已引育超5700家科技企业，市区联动机制持续发力，服务专员带政策包下沉一线，精准匹配企业创新需求，引导企业运用AI、大模型等前沿技术升级科创服务。</div>
+                    <div class="policy-actions">
+                        <a class="btn btn-source" href="http://news.enorth.com.cn/system/2026/10/27/059933206.shtml" target="_blank">
+                            <svg viewBox="0 0 24 24"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
+                            查看原文
+                        </a>
+                        <button class="btn btn-share" onclick="sharePolicy('天津"人工智能+"激活产业新动能（科技型中小企业有望突破1.3万家）', 'http://news.enorth.com.cn/system/2026/10/27/059933206.shtml')">
+                            <svg viewBox="0 0 24 24"><path d="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10-4.48 10-10S17.52,2 12,2zM12,20c-4.41,0-8-3.59-8-8s3.59-8 8-8 8,3.59 8,8-3.59,8-8,8zM8,12l4-4 4,4H12v4h-0v-4z"/></svg>
+                            分享到微信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📋 一站式科技政策日报 | 每日自动更新</p>
+            <p>数据来源：河北省科技厅、雄安新区官网、邢台市政府、邯郸市政府、沧州市政府、天津市科技局</p>
+            <p style="margin-top: 8px;">更新时间：2026年10月27日 07:00</p>
+        </div>
     </div>
-  </div>
 
-  <div class="policy-card">
-    <div class="policy-title">河北开展2026年5G工厂建设工作 加快实施"5G+工业互联网"升级行动</div>
-    <div class="policy-summary">省工信厅、省通信管理局联合印发通知，开展2026年5G工厂建设工作。每年遴选不少于100个5G工厂作为省级重点项目培育，优先申报国家工业设备改造更新项目。10月30日前企业可通过"5G+工业互联网发展管理平台"完成申报，11月6日前各市完成审核推荐。鼓励开展"5G+工业互联网"融合应用先导区建设。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/snxw40/2026102308285222242/index.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('河北开展2026年5G工厂建设，每年遴选100+省级重点项目，10月30日截止申报','https://gxt.hebei.gov.cn/hbgyhxxht/xwzx32/snxw40/2026102308285222242/index.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
+    <!-- Share Modal -->
+    <div class="modal-overlay" id="shareModal">
+        <div class="modal-box">
+            <h3>📤 分享到微信</h3>
+            <div class="qr-placeholder">
+                <p style="font-size: 2em; margin-bottom: 8px;">📱</p>
+                <p>长按复制链接后，打开微信分享给好友</p>
+            </div>
+            <div class="share-link" id="shareLink"></div>
+            <div>
+                <button class="btn-copy" onclick="copyShareLink()">复制链接</button>
+                <button class="btn-close" onclick="closeShareModal()">关闭</button>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="policy-card">
-    <div class="policy-title">河北省修订印发《河北省创新创业大赛管理办法》</div>
-    <div class="policy-summary">新办法鼓励主体赛决赛获奖团队在河北省内实现成果转化，满足条件的可申报省级科技计划项目，给予不超过30万元专项资金支持。鼓励各级科技管理部门择优将参赛项目推荐给孵化器、园区，组织融资对接活动。高校、科研院所可对获一等奖项目成员给予省级科技计划项目同等待遇。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://kjj.lf.gov.cn/zhengwugongkai/fadingzhudonggongkaineirong/zhengcefagui/kejizhengce/2026-10-24/9424.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('河北省修订创新创业大赛管理办法，获奖团队成果转化可获最高30万元支持','https://kjj.lf.gov.cn/zhengwugongkai/fadingzhudonggongkaineirong/zhengcefagui/kejizhengce/2026-10-24/9424.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
 
-  <div class="policy-card">
-    <div class="policy-title">河北着力推动电子信息产业提质扩容 "一核两区两带多点"规划发布</div>
-    <div class="policy-summary">京津冀集成电路集群获批国家先进制造业集群。河北将推动中国星网开展前沿卫星互联网研究，实施省级科技研发计划专项聚焦集成电路、空天信息、消费电子等关键领域。依托北京亦庄产业优势，推动在沧州、唐山等区域共建产业园区，有序承接外溢企业。培育北斗领域制造业创新中心。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.xingtai.gov.cn/ywdt/snyw/202610/t20261021_736839.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('河北电子信息产业"一核两区两带多点"规划发布，京津冀集成电路集群获批国家先进制造业集群','https://www.xingtai.gov.cn/ywdt/snyw/202610/t20261021_736839.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
+    <script>
+        function showToast(msg) {
+            const t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 2500);
+        }
 
-  <div class="policy-card">
-    <div class="policy-title">河北启动民企创新需求和资源对接专项行动</div>
-    <div class="policy-summary">省发展改革委印发《河北省民营企业创新需求和资源对接专项行动方案》，以"企业出题、高校院所答题、政府推介、市场运营"方式搭建科技成果转化中介平台。以县域为单位收集企业研发需求，形成需求清单；对接京津高校和科研院所创新资源，建立创新需求和资源项目库，推动科创资源向民企下沉常态化。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.toutiao.com/article/7699762127292334635/" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('河北启动民企创新需求和资源对接专项行动，搭建科技成果转化中介平台','https://www.toutiao.com/article/7699762127292334635/')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
+        function sharePolicy(title, url) {
+            const shareUrl = window.location.origin + window.location.pathname;
+            const shareText = '\u3010\u79d1\u6280\u653f\u7b56\u65e5\u62a5\u3011' + title + '\n' + url + '\n\n\u67e5\u770b\u66f4\u591a\u653f\u7b56 \u2192 ' + shareUrl;
+            
+            document.getElementById('shareLink').textContent = shareText;
+            document.getElementById('shareModal').classList.add('active');
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: '\u79d1\u6280\u653f\u7b56\u65e5\u62a5 - ' + title,
+                    text: shareText,
+                    url: url
+                }).catch(() => {});
+            }
+        }
 
-<!-- 雄安新区 -->
-<div class="region-section">
-  <div class="region-header xiongan"><span class="icon">🌟</span>雄安新区</div>
+        function copyShareLink() {
+            const text = document.getElementById('shareLink').textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('\u2705 \u5df2\u590d\u5236\u5230\u526a\u8d34\u677f\uff0c\u53ef\u7c98\u8d34\u5230\u5fae\u4fe1\u5206\u4eab');
+            }).catch(() => {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                showToast('\u2705 \u5df2\u590d\u5236\u5230\u526a\u8d34\u677f');
+            });
+        }
 
-  <div class="policy-card">
-    <div class="policy-title">张国华主持雄安新区党工委学习会 加快构建现代化产业体系</div>
-    <div class="policy-summary">省委常委、雄安新区党工委书记张国华主持学习会，强调因地制宜发展新质生产力，推动科技教育人才和产业一体化发展。要求建强用好国家级高新区、雄安中关村科技园，打造新时代创新高地。完善"雄才十六条"政策体系，以产业和项目为牵引推进产才融合发展。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.xiongan.gov.cn/20261024/e56fc1183ad843b3b0d5ced802762cc7/c.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('张国华主持雄安新区党工委学习会，加快构建现代化产业体系，建设新时代创新高地','https://www.xiongan.gov.cn/20261024/e56fc1183ad843b3b0d5ced802762cc7/c.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
+        function closeShareModal() {
+            document.getElementById('shareModal').classList.remove('active');
+        }
 
-  <div class="policy-card">
-    <div class="policy-title">2026全球治理论坛(雄安)举办 "雄安时空"推介空天信息产业</div>
-    <div class="policy-summary">10月23-25日，2026全球治理论坛(雄安)举办，来自90多个国家的嘉宾参会。"雄安时空"推介活动展示空天信息产业成果：已汇聚蓝箭鸿擎等60余家空天信息企业，"雄安一号"卫星翱翔太空。梅卡曼德成为首家全程在新区培育登陆港交所的具身智能企业。锚定"511"目标：2027年培育5家独角兽、10家五十亿级企业、100家骨干企业。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.rmxiongan.com/n2/2026/1025/c383557-41731711.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('2026全球治理论坛(雄安)举办，空天信息产业汇聚60+企业，"511"目标：5家独角兽','https://www.rmxiongan.com/n2/2026/1025/c383557-41731711.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">经济日报头版聚焦：雄安高端高新产业积厚成势</div>
-    <div class="policy-summary">经济日报头版报道雄安高端高新产业发展成果。国家干细胞工程技术研究中心雄安中心已进入实质化运行。新区围绕创新策源、概念验证及中试、创新成果产业化推进平台建设，重点打造空天信息与卫星互联网、数智经济和人工智能、新材料三条创新产业链，加快培育现代化产业体系。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.thepaper.cn/newsDetail_forward_34330760" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('经济日报头版聚焦雄安高端高新产业，重点打造三条创新产业链','https://www.thepaper.cn/newsDetail_forward_34330760')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
-
-<!-- 邢台市 -->
-<div class="region-section">
-  <div class="region-header xingtai"><span class="icon">🔧</span>邢台市</div>
-
-  <div class="policy-card">
-    <div class="policy-title">邢台技改赋能产业焕新 "技改贷"注入金融活水</div>
-    <div class="policy-summary">邢台市引导金融机构创新推出"技改贷"等特色金融产品，组织行业专家上门问诊提供定制化技术指导，支持企业联合高校、科研院所攻坚关键技术。推动年产值5亿元以上骨干企业、单项冠军企业、专精特新中小企业实施技改项目。深化"分类台账+包联帮扶+全流程服务"全生命周期管理体系。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.he.news.cn/20261025/c6768ab2cd044345a8af29cadac35233/c.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('邢台技改赋能产业焕新，推出"技改贷"金融产品，全生命周期管理体系','https://www.he.news.cn/20261025/c6768ab2cd044345a8af29cadac35233/c.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">邢台发放首笔"夸腾质量贷" 质量融资增信向县域延伸</div>
-    <div class="policy-summary">威县河北春岳环保科技有限公司获批中国银行邢台分行300万元"夸腾质量贷"，为全市首笔。该产品依托省"冀质贷"质量融资增信体系，将企业质量管理、创新能力、信用状况等"软实力"转化为融资"硬指标"，有效降低轻资产科技型中小企业融资门槛。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.163.com/dy/article/LA376U0R0514DPVJ.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('邢台发放首笔"夸腾质量贷"，质量"软实力"变融资"硬指标"','https://www.163.com/dy/article/LA376U0R0514DPVJ.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
-
-<!-- 邯郸市 -->
-<div class="region-section">
-  <div class="region-header handan"><span class="icon">💡</span>邯郸市</div>
-
-  <div class="policy-card">
-    <div class="policy-title">邯山区"浙享智造OPC社区"激活商贸新动能</div>
-    <div class="policy-summary">邯山区依托浙江商贸城（57万㎡，辐射冀南200公里）打造"浙享智造OPC社区"。搭建低成本、轻量化创业孵化平台，配套标准化培训空间、直播场景。引入免费大模型工具，开展大模型应用、电商运营、跨境贸易等培训，推动"实体展销+直播带货+线上引流"新模式。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://finance.sina.com.cn/jjxw/2026-10-25/doc-iniwkrxi3608794.shtml" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('邯山区"浙享智造OPC社区"激活商贸新动能，引入免费大模型工具','https://finance.sina.com.cn/jjxw/2026-10-25/doc-iniwkrxi3608794.shtml')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">武安磁力场OPC综合服务平台上线 300余款AI模型+算力券</div>
-    <div class="policy-summary">武安市磁力场OPC综合服务平台正式上线，采用"四大中台+垂域专区"架构。政务服务方面实现落户零跑腿、最快3分钟办结营业执照。平台汇聚300余款主流AI模型、弹性算力资源与SaaS工具，配套算力券抵扣政策。设有政府驾驶舱实时监测算力使用、政策核销、创业主体活跃度。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.toutiao.com/article/7699664549099700751/" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('武安磁力场OPC综合服务平台上线，300+AI模型+算力券，3分钟办结营业执照','https://www.toutiao.com/article/7699664549099700751/')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">邯郸首批"OPC科创贷"在成安县首发 3家企业获贷33万元</div>
-    <div class="policy-summary">邯郸市首批OPC专属信贷产品"OPC科创贷"在成安县亚辉产业园落地，3家OPC企业合计获贷33万元，实现全市首款OPC信贷产品、首笔放款双双落地。成安县建立绿色通道，精简对接流程，压缩办理时限，为OPC创业主体开辟全新融资渠道。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://economy.hebccw.cn/system/2026/10/24/102236168.shtml" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('邯郸首批"OPC科创贷"在成安县首发，全市首款OPC信贷产品','https://economy.hebccw.cn/system/2026/10/24/102236168.shtml')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
-
-<!-- 沧州市 -->
-<div class="region-section">
-  <div class="region-header cangzhou"><span class="icon">🌊</span>沧州市</div>
-
-  <div class="policy-card">
-    <div class="policy-title">中国—中东欧国家(沧州)中小企业合作论坛10月26日启幕 AI赋能+OPC出海</div>
-    <div class="policy-summary">第七届中国-中东欧国家(沧州)中小企业合作论坛以"双向合作 共享未来"为主题，聚焦"论坛+产业"联动、AI赋能数字出海、产业链供需融通。合作区已构建"4+2"产业格局（石油化工、装备制造、现代农业、新型建材物流+通用航空、医卫大健康），以AI赋能特色产业高质量发展，提升企业跨境出海便利度。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.cangzhou.gov.cn/cangzhou/indexlbt/202610/353ee8d326d84c23b357cde340a7cf22.shtml" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('中国-中东欧(沧州)中小企业合作论坛今日启幕，AI赋能+OPC出海','https://www.cangzhou.gov.cn/cangzhou/indexlbt/202610/353ee8d326d84c23b357cde340a7cf22.shtml')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">沧州持续深化与中东欧国家产业合作 "4+2"产业格局成型</div>
-    <div class="policy-summary">沧州依托中国-中东欧(沧州)中小企业合作区、保税物流中心(B型)等平台，深化与中东欧国家在商务、教育、科技等领域合作。以鲨鱼飞机项目为牵引构建一体化通航产业生态，管道装备、精密铸造企业对标欧盟标准开展技改。在斯洛伐克设立沧州特色产品展销中心，形成双向循环贸易格局。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.toutiao.com/article/7700545140645790246" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('沧州深化与中东欧国家产业合作，"4+2"产业格局成型，通航+管道装备+精密铸造','https://www.toutiao.com/article/7700545140645790246')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
-
-<!-- 天津市 -->
-<div class="region-section">
-  <div class="region-header tianjin"><span class="icon">🚀</span>天津市</div>
-
-  <div class="policy-card">
-    <div class="policy-title">天津"人工智能+"激活产业新动能 科技型中小企业有望突破1.3万家</div>
-    <div class="policy-summary">天津梯度培育企业体系成效显著：科技型中小企业今年有望突破1.3万家（制造业占38%），规上高企超4200家（增长32.5%），累计认定318家猎豹企业。天开园累计引育企业超5700家。今年以来获批国家科技项目1778项、资金30.73亿元（同比增36.5%），22项成果获国家科技奖创历年新高。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.tj.gov.cn/sy/tjxw/202610/t20261024_7640767.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('天津"人工智能+"激活产业新动能，科技型中小企业有望突破1.3万家','https://www.tj.gov.cn/sy/tjxw/202610/t20261024_7640767.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">天津武清高村数智创新园扩容 新增30万㎡产业空间</div>
-    <div class="policy-summary">天津市政府批复武清区高村数智创新园控规修编，预计新增约30万平方米高品质产业承载空间，带动新一代信息技术、人工智能等领域投资超百亿元。园区已落地中国电信、中国联通京津冀智算中心，中国移动京津冀云智算科创产业园今年开工。九成以上产业用地已完成招拍挂，是京津冀距北京核心区最近、算力最强的智算集聚区。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.toutiao.com/article/7700443912850227752/" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('天津武清高村数智创新园扩容，新增30万㎡，带动AI投资超百亿','https://www.toutiao.com/article/7700443912850227752/')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">天津加快推动海洋装备产业提质升级</div>
-    <div class="policy-summary">"十五五"时期天津将推动海洋装备产业向高端化、智能化发展。发挥国家海洋技术中心、中船七〇七所等平台优势，聚焦超深水油气生产装备、大型双燃料船舶等赛道。推进海油发展天津海洋装备智能制造基地二期、中船天津转型升级二三期等重点项目。运用AI、工业互联网赋能全链条。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://gyxxh.tj.gov.cn/ZWXX5652/GXDT9285/202610/t20261022_7638331.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('天津加快海洋装备产业提质升级，聚焦超深水装备、智能船舶','https://gyxxh.tj.gov.cn/ZWXX5652/GXDT9285/202610/t20261022_7638331.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">天津出台场景创新和应用工作方案 2028年打造10+国家重大场景</div>
-    <div class="policy-summary">天津市印发《加快场景创新和应用工作方案》，到2028年底力争打造10+国家综合性重大应用场景、50+市级特色场景、100+区级场景，挖掘200+央企国企开放场景，赋能1000+家科创企业。聚焦AI、数字经济、全空间无人体系、清洁能源、机器人等领域，推动脑机接口、低空经济、商业航天等应用场景。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://www.cinic.org.cn/xy/gdcj/1657962.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('天津出台场景创新方案，2028年10+国家重大场景，赋能1000+科创企业','https://www.cinic.org.cn/xy/gdcj/1657962.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-
-  <div class="policy-card">
-    <div class="policy-title">天津市政府常务会议审议《生物制造创新发展行动计划(2026-2030)》</div>
-    <div class="policy-summary">市长张工主持第118次常务会议，审议生物制造创新发展行动计划。强调生物制造是"十五五"重点布局的未来产业，要用好天津基础研究、创新平台、领军人才优势，推进技术创新突破和产业集聚发展。科学规划专业园区，促进高校、院所、企业资源对接，着力建设生物制造创新和产业集聚高地。</div>
-    <div class="policy-actions">
-      <a class="btn btn-original" href="https://swj.tj.gov.cn/xwzx_17135/szyw/202610/t20261019_7635548.html" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zm-2 16v-2H3v2h9zm-4 0v-2H5v2h3zm-4 0v-2H2v2h2z"/></svg>查看原文</a>
-      <button class="btn btn-share" onclick="shareToWechat('天津审议生物制造创新发展行动计划(2026-2030)，建设生物制造产业高地','https://swj.tj.gov.cn/xwzx_17135/szyw/202610/t20261019_7635548.html')"><svg viewBox="0 0 24 24"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>分享到微信</button>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="footer">
-  <p>一站式科技政策日报 | 每日自动更新</p>
-  <p>数据来源：河北省科技厅、雄安新区官网、邢台市政府、邯郸市科技局、沧州市政府、天津市科技局</p>
-  <p>由 WorkBuddy 自动生成于 2026年10月26日 07:00</p>
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script>
-function shareToWechat(title, url) {
-  var shareText = '【科技政策日报】' + title + ' ' + url;
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(shareText).then(function() {
-      showToast('已复制到剪贴板，可粘贴分享到微信');
-    }).catch(function() {
-      fallbackCopy(shareText);
-    });
-  } else {
-    fallbackCopy(shareText);
-  }
-}
-
-function fallbackCopy(text) {
-  var ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.position = 'fixed';
-  ta.style.left = '-9999px';
-  document.body.appendChild(ta);
-  ta.select();
-  try {
-    document.execCommand('copy');
-    showToast('已复制到剪贴板，可粘贴分享到微信');
-  } catch(e) {
-    showToast('请手动复制链接分享到微信');
-  }
-  document.body.removeChild(ta);
-}
-
-function showToast(msg) {
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast show';
-  setTimeout(function() { t.className = 'toast'; }, 2500);
-}
-</script>
-
+        document.getElementById('shareModal').addEventListener('click', function(e) {
+            if (e.target === this) closeShareModal();
+        });
+    </script>
 </body>
 </html>
